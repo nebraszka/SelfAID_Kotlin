@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Layout Test App</string>
+    <string name="first_row_first_tv_name">Trzy</string>
+    <string name="first_row_second_tv_name">Jeden</string>
+    <string name="first_row_third_tv_name">Dwa</string>
+    <string name="second_row_tv_name">Cztery</string>
+    <string name="third_row_tv_name">Pięć</string>
+    <string name="fourth_row_first_tv_name">Sześć</string>
+    <string name="fourth_row_second_tv_name">Siedem</string>
+    <string name="first_button_row_btn_name">Przycisk 1</string>
+    <string name="second_button_row_first_btn_name">Przycisk 2</string>
+    <string name="second_button_row_second_btn_name">Przycisk 3</string>
+</resources>
