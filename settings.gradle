@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Layout Test App"
+rootProject.name = "Pass data between activity"
 include ':app'

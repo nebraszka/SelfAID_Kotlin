@@ -1,4 +1,4 @@
-package pl.edu.pw.ee.layouttestapp
+package pl.edu.pw.ee.passdatabetweenactivity
 
 import org.junit.Test
 
