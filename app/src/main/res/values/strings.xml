@@ -1,16 +1,29 @@
 <resources>
     <string name="app_name">SelfAID</string>
-    <string name="title_activity_main2">MainActivity2</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-    <string name="title_activity_emotions_journal">EmotionsJournal</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="ej_menu">Dziennik emocji</string>
-    <string name="ej_new_page">Tworzenie wpisu</string>
+    <!-- Main menu -->
+    <string name="menu_Challenges_Btn">Wyzwania</string>
+    <string name="menu_Emotions_Journal_Btn">Dziennik Emocji</string>
+    <string name="menu_About_Us_Btn">O nas</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Emotions journal - menu -->
+    <string name="EJ_Add_New_Entry_Btn">Dodaj wpis</string>
+
+    <!-- Emotions journal - new entry -->
+    <string name="EJ_Entry_Date">Data:</string>
+    <string name="EJ_Entry_Date_Hint">DD/mm/YY</string>
+    <string name="EJ_Entry_Choose_Date_Btn">Wybierz datę</string>
+    <string name="EJ_Entry_Title">Tytuł:</string>
+    <string name="EJ_Entry_Title_Hint">Tytuł jest opcjonalny</string>
+    <string name="EJ_Entry_Choose_Emotion">Wybierz emocję</string>
+    <string name="EJ_Entry_Emotion_Describtion_Btn">Opis emocji</string>
+    <string name="EJ_Entry_Save_Btn">Zapisz</string>
+    <string name="EJ_Entry_Add_New_Page_Btn">Zapisz</string>
+
+    <!-- Emotions journal - description of emotion -->
+    <string name="EJ_EmotionDescription_Emotion_Name">Emocja</string>
+    <string name="EJ_Emotion_Descripiton_Describtion">Opis emocji</string>
+    <string name="EJ_Emotion_Descripiton_Back_Btn">Powrót</string>
+    
+
+
 </resources>

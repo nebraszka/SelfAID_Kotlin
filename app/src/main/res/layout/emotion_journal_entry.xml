@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context=".EmotionsJournalEntry">
+    tools:context=".activities.emotions_journal.EJEntry">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -33,7 +33,7 @@
                     android:layout_weight="2"
 
                     android:fontFamily="@font/ubuntu_medium"
-                    android:text="Data:"
+                    android:text="@string/EJ_Entry_Date"
                     android:textSize="20sp" />
 
                 <TextView
@@ -43,7 +43,7 @@
                     android:layout_weight="1"
 
                     android:fontFamily="@font/ubuntu_medium"
-                    android:hint="DD/mm/YY" />
+                    android:hint="@string/EJ_Entry_Date_Hint" />
 
                 <Button
                     android:id="@+id/btnEJDatePicker"
@@ -51,7 +51,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
 
-                    android:text="Wybierz datę" />
+                    android:text="@string/EJ_Entry_Choose_Date_Btn" />
 
             </LinearLayout>
 
@@ -67,7 +67,7 @@
                     android:layout_weight="1"
 
                     android:fontFamily="@font/ubuntu_medium"
-                    android:text="Tytuł:"
+                    android:text="@string/EJ_Entry_Title"
                     android:textSize="20sp" />
 
                 <EditText
@@ -76,10 +76,12 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
                     android:padding="20dp"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
 
                     android:fontFamily="@font/ubuntu_medium"
-                    android:gravity="center"
-                    android:hint="Tytuł jest opcjonalny" />
+                    android:hint="@string/EJ_Entry_Title_Hint"
+                    android:cursorVisible="false"/>
 
 
             </LinearLayout>
@@ -91,7 +93,7 @@
 
                 android:fontFamily="@font/ubuntu_medium"
                 android:gravity="center"
-                android:text="Wybierz emocję"
+                android:text="@string/EJ_Entry_Choose_Emotion"
                 android:textSize="20sp"
                 android:layout_weight="1"/>
 
@@ -108,33 +110,31 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:layout_weight="10"
-                    android:padding="25dp"
-                    tools:ignore="SpeakableTextPresentCheck" />
+                    android:padding="25dp" />
 
                 <Button
                     android:id="@+id/btnEJEmotionInfo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Opis emocji"
-
-                    android:visibility="gone" />
+                    android:text="@string/EJ_Entry_Emotion_Describtion_Btn"
+                    />
 
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvItemsList"
+                android:id="@+id/rvEJTasks"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:visibility="visible"
-                android:layout_weight="1"
-                tools:visibility="gone" />
+                android:layout_height="wrap_content"
+                android:padding="16dp"/>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                >
 
                 <Button
                     android:id="@+id/btnEJSaveEntry"
@@ -142,12 +142,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="5dp"
                     android:layout_weight="1"
+                    style="?android:attr/borderlessButtonStyle"
 
                     android:fontFamily="@font/ubuntu_medium"
-                    android:text="Zapisz"
+                    android:text="@string/EJ_Entry_Save_Btn"
                     android:backgroundTint="@color/said_pink_dark"
-
-                    android:visibility="gone"/>
+                    />
 
                 <Button
                     android:id="@+id/btnEJAddEmotion"
@@ -155,12 +155,12 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_marginHorizontal="5dp"
+                    style="?android:attr/borderlessButtonStyle"
 
                     android:backgroundTint="@color/said_peach"
                     android:fontFamily="@font/ubuntu_medium"
-                    android:text="Dodaj kolejną"
-
-                    android:visibility="gone"/>
+                    android:text="@string/EJ_Entry_Add_New_Page_Btn"
+                    />
             </LinearLayout>
 
 

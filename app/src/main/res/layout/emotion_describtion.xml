@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginHorizontal="10dp"
-    tools:context=".activities.emotions_journal.EJMenu">
+    tools:context=".activities.emotions_journal.EJEntry">
 
     <TextView
-        android:id="@+id/tvChallengeTopic"
+        android:id="@+id/tvEmotionName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/ubuntu_medium"
-        android:text="Temat wyzwania"
+        android:text="@string/EJ_EmotionDescription_Emotion_Name"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
 
@@ -22,13 +22,13 @@
         app:layout_constraintVertical_bias="0.1" />
 
     <ScrollView
-        android:id="@+id/svChallengeDescribtion"
+        android:id="@+id/svEmotionDescribtion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvChallengeTopic"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmotionName"
         app:layout_constraintVertical_bias="0.05">
 
         <LinearLayout
@@ -37,12 +37,12 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tvChallengeDescribtion"
+                android:id="@+id/tvEmotionDescribtion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/ubuntu_medium"
-                android:text="Opis wyzwania"
+                android:text="@string/EJ_Emotion_Descripiton_Describtion"
                 android:textSize="15sp"
 
                 />
@@ -50,32 +50,17 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/btnNextChallenge"
+        android:id="@+id/btnEmotionDescribtionBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/ubuntu_medium"
-        android:text="Następne wyzwanie"
+        android:text="@string/EJ_Emotion_Descripiton_Back_Btn"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnTakeUpChallenge"
-
-        android:visibility="gone"/>
-
-    <Button
-        android:id="@+id/btnTakeUpChallenge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/ubuntu_medium"
-        android:text="Podejmij wyzwanie!"
-        app:layout_constraintBottom_toTopOf="@+id/btnNextChallenge"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/svChallengeDescribtion"
+        app:layout_constraintTop_toBottomOf="@+id/svEmotionDescribtion"
         app:layout_constraintVertical_chainStyle="packed"
         android:layout_marginVertical="20dp"
         android:backgroundTint="@color/said_pink_dark"

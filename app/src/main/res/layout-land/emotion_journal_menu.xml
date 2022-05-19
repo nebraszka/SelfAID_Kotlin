@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EmotionsJournalMenu">
+    tools:context=".activities.emotions_journal.EJMenu">
 
     <ImageButton
-        android:id="@+id/btnEJNewPage"
+        android:id="@+id/btnEJFirstPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:src="@drawable/add"
         android:backgroundTint="@color/white"
-        android:scaleType="fitCenter"/>
+        android:scaleType="fitCenter"
+        android:contentDescription="@null"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
