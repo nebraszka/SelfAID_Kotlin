@@ -13,4 +13,7 @@ interface EmotionDao {
     @Query("SELECT * FROM TB_Emotions ORDER BY emotion ASC")
         fun getAlphabetizedEmotions() : Flow<List<Emotion>>
 
+    @Query("SELECT * FROM TB_Emotions WHERE emotion == :name")
+        fun getEmotion(name: String) : Flow<Emotion>
+
 }

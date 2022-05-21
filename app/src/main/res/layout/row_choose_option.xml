@@ -10,19 +10,19 @@
     android:layout_margin="8dp">
 
     <TextView
-        android:id="@+id/tvScaleQuestionRow"
+        android:id="@+id/tvChooseAnswerRow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
         tools:text="Treść pytania"
         android:fontFamily="@font/ubuntu_medium"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"/>
 
-    <RadioGroup
+    <LinearLayout
+        android:id="@+id/llCheckBoxes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="25dp">
-
-    </RadioGroup>
-    e
+        android:orientation="vertical"
+        android:padding="5dp"/>
 </LinearLayout>

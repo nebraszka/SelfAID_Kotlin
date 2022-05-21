@@ -1,15 +1,26 @@
 package pl.nebraszka.selfaid.view_models
 
 import androidx.lifecycle.*
+import kotlinx.coroutines.flow.Flow
+import pl.nebraszka.selfaid.dao.AnswerSuggestionDao
+import pl.nebraszka.selfaid.entities.AnswerSuggestion
 import pl.nebraszka.selfaid.entities.Emotion
-import pl.nebraszka.selfaid.entities.Exercise
+import pl.nebraszka.selfaid.entities.EJExercise
 import pl.nebraszka.selfaid.repositories.SelfAIDRepository
 import kotlin.IllegalArgumentException
 
 class EJEntryViewModel(private val repository: SelfAIDRepository): ViewModel() {
-
+    companion object{
+        var chosenEmotion: Emotion? = null
+    }
     val allEmotions: LiveData<List<Emotion>> = repository.allEmotions.asLiveData()
-    val allExercise: LiveData<List<Exercise>> = repository.allExercises.asLiveData()
+    val allEJExercise: LiveData<List<EJExercise>> = repository.allExercises.asLiveData()
+    val allAnswerSuggestions: LiveData<List<AnswerSuggestion>> = repository.allAnswerSuggestions.asLiveData()
+
+
+    fun getEmotion(name: String) : LiveData<Emotion>{
+        return repository.getEmotion(name).asLiveData()
+    }
 
 }
 

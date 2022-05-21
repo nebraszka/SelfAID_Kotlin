@@ -2,21 +2,23 @@ package pl.nebraszka.selfaid.repositories
 
 import androidx.annotation.WorkerThread
 import kotlinx.coroutines.flow.Flow
-import pl.nebraszka.selfaid.dao.EmotionDao
-import pl.nebraszka.selfaid.dao.ExerciseDao
-import pl.nebraszka.selfaid.dao.ExerciseTypeDao
-import pl.nebraszka.selfaid.entities.Emotion
-import pl.nebraszka.selfaid.entities.Exercise
-import pl.nebraszka.selfaid.entities.ExerciseType
+import pl.nebraszka.selfaid.dao.*
+import pl.nebraszka.selfaid.entities.*
 
 class SelfAIDRepository( // TODO: czy da sie bez tego?
     private val emotionDao: EmotionDao,
-    private val exerciseDao: ExerciseDao,
-    private val exerciseTypeDao: ExerciseTypeDao
+    private val ejExerciseDao: EJExerciseDao,
+    private val answerSuggestionDao: AnswerSuggestionDao
     )
 {
     val allEmotions: Flow<List<Emotion>> = emotionDao.getAlphabetizedEmotions()
-    val allExerciseTypes: Flow<List<ExerciseType>> = exerciseTypeDao.getExerciseTypes()
-    val allExercises: Flow<List<Exercise>> = exerciseDao.getExercises()
+    val allExercises: Flow<List<EJExercise>> = ejExerciseDao.getExercises()
+    val allAnswerSuggestions: Flow<List<AnswerSuggestion>> = answerSuggestionDao.getAllAnswerSuggestions()
+
+    @Suppress("RedundantSuspendModifier")
+    @WorkerThread
+    fun getEmotion(name: String) : Flow<Emotion>{
+        return emotionDao.getEmotion(name)
+    }
 
 }

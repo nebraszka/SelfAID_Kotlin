@@ -4,30 +4,24 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import androidx.sqlite.db.SupportSQLiteDatabase
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.launch
+import pl.nebraszka.selfaid.dao.AnswerSuggestionDao
 import pl.nebraszka.selfaid.dao.EmotionDao
-import pl.nebraszka.selfaid.dao.ExerciseDao
-import pl.nebraszka.selfaid.dao.ExerciseTypeDao
+import pl.nebraszka.selfaid.dao.EJExerciseDao
+import pl.nebraszka.selfaid.dao.EJRespondDao
 import pl.nebraszka.selfaid.entities.*
-import java.io.File
 
 @Database(
     entities = [
-        //AnswerSuggestions::class,
         Emotion::class,
-        Exercise::class,
-        ExerciseType::class
-        /*EmotionsJournal::class,
-        EntryPages::class,
-        Responds::class*/
-    ], version = 4, exportSchema = false // TODO: Do zmiany potem
+        EJExercise::class,
+        ExerciseType::class,
+        AnswerSuggestion::class
+    ], version = 6, exportSchema = false // TODO: Do zmiany potem
 )
 abstract class SelfAIDDatabase: RoomDatabase() {
     abstract fun emotionDao() : EmotionDao
-    abstract fun exerciseDao(): ExerciseDao
-    abstract fun exerciseTypeDao(): ExerciseTypeDao
+    abstract fun exerciseDao(): EJExerciseDao
+    abstract fun answerSuggestionDao(): AnswerSuggestionDao
 
     companion object{
 

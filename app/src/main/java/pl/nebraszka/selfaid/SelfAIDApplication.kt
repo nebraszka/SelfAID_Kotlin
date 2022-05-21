@@ -14,6 +14,6 @@ class SelfAIDApplication: Application() {
     val repository by lazy { SelfAIDRepository(
         database.emotionDao(),
         database.exerciseDao(),
-        database.exerciseTypeDao()
+        database.answerSuggestionDao()
     )}
 }

@@ -31,9 +31,10 @@
         <entry key="..\:/Users/48518/Desktop/SelfAIDRepo/app/src/main/res/layout/emotion_journal_menu.xml" value="0.1" />
         <entry key="..\:/Users/48518/Desktop/SelfAIDRepo/app/src/main/res/layout/main_menu.xml" value="0.18541666666666667" />
         <entry key="..\:/Users/48518/Desktop/SelfAIDRepo/app/src/main/res/layout/row_challenge_lesson.xml" value="0.13518518518518519" />
-        <entry key="..\:/Users/48518/Desktop/SelfAIDRepo/app/src/main/res/layout/row_choose_option.xml" value="0.1" />
+        <entry key="..\:/Users/48518/Desktop/SelfAIDRepo/app/src/main/res/layout/row_choose_option.xml" value="0.25" />
         <entry key="..\:/Users/48518/Desktop/SelfAIDRepo/app/src/main/res/layout/row_question.xml" value="0.23703703703703705" />
         <entry key="..\:/Users/48518/Desktop/SelfAIDRepo/app/src/main/res/layout/row_scale_question.xml" value="0.25" />
+        <entry key="..\:/Users/48518/Desktop/SelfAIDRepo/app/src/main/res/layout/row_todo_task.xml" value="0.22685185185185186" />
         <entry key="..\:/Users/48518/Desktop/SelfAIDRepo/app/src/main/res/menu/bottom_nav_menu.xml" value="0.175" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2665" />
         <entry key="app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.325" />

@@ -28,14 +28,14 @@
         android:layout_marginVertical="15dp"/>
 
     <TextView
-        android:id="@+id/scaleAnswer"
+        android:id="@+id/tvScaleAnswer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        tools:text="0 / 5"
+        android:textSize="15sp"
+        tools:text="0/5"
         android:textStyle="bold"
         android:fontFamily="@font/ubuntu_medium"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center" />
 
 
 </LinearLayout>
