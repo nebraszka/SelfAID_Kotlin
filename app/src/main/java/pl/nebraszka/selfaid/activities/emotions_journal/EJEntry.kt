@@ -9,10 +9,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.observe
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.emotion_journal_entry.*
-import kotlinx.android.synthetic.main.row_scale_question.*
 import pl.nebraszka.selfaid.R
 import pl.nebraszka.selfaid.SelfAIDApplication
-import pl.nebraszka.selfaid.adapters.ExerciseAdapter
+import pl.nebraszka.selfaid.adapters.exercises.ExerciseAdapter
 import pl.nebraszka.selfaid.entities.Emotion
 import pl.nebraszka.selfaid.tools.DatePickerHandler
 import pl.nebraszka.selfaid.view_models.*

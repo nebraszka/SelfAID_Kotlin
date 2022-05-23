@@ -1,6 +1,5 @@
 package pl.nebraszka.selfaid.adapters.exercises
 
-import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.CheckBox
@@ -13,45 +12,40 @@ import pl.nebraszka.selfaid.SelfAIDDatabase
 import pl.nebraszka.selfaid.entities.AnswerSuggestion
 import pl.nebraszka.selfaid.enums.ExerciseType
 
-class ChooseAnswerViewHolder: ExerciseViewHolderGenerator{
+class ChooseAnswerViewHolder(
+    parent: ViewGroup,
+    private val owner: LifecycleOwner,
+    private val database: SelfAIDDatabase,
+    private val multipleChoice: Boolean
+): ExerciseViewHolderGenerator(parent) {
+    lateinit var view: View
 
-    private lateinit var parent: ViewGroup
-    private lateinit var db: SelfAIDDatabase
-    private lateinit var view: View
+    override fun createViewHolder(): ExerciseViewHolder {
+        layoutId = ExerciseType.VIEW_CHOOSE_OPTION.layoutId
+        view = inflateLayout()
 
-    fun createChooseOptionQuestion(
-        owner: LifecycleOwner,
-        parent: ViewGroup,
-        multipleChoice: Boolean
-    ): ExerciseViewHolder {
-        this.parent = parent
-        db = SelfAIDDatabase.getDatabase(parent.context)
-
-        val view: View = LayoutInflater.from(parent.context)
-            .inflate(ExerciseType.VIEW_CHOOSE_OPTION.layoutId, parent, false)
-
-        this.view = view
-        val answSugg = db.answerSuggestionDao().getAllAnswerSuggestions().asLiveData()
+        val answSugg = database.answerSuggestionDao()
+            .getAllAnswerSuggestions().asLiveData()
 
         answSugg.observe(owner){ answSugg->
-            answSugg.let {
-                attachAnswers(it, multipleChoice)
-            }
+            attachAnswers(answSugg, multipleChoice)
         }
         return ExerciseViewHolder(view)
     }
 
-    fun attachAnswers(answSugg: List<AnswerSuggestion>, multipleChoice: Boolean){
-        if(multipleChoice == true){
+    private fun attachAnswers(answSugg: List<AnswerSuggestion>, multipleChoice: Boolean){
+        if(multipleChoice) {
             for(a in answSugg){
                 val checkBox: CheckBox = CheckBox(parent.context)
                 checkBox.text = a.answer
                 checkBox.id = View.generateViewId()
                 view.llAnswerSuggestions.addView(checkBox)
             }
-        } else {
-            var radioGroup: RadioGroup = RadioGroup(parent.context)
+        }
+        else {
+            val radioGroup: RadioGroup = RadioGroup(parent.context)
             view.llAnswerSuggestions.addView(radioGroup)
+
             for(a in answSugg){
                 val btn: RadioButton = RadioButton(parent.context)
                 btn.text = a.answer
@@ -60,9 +54,5 @@ class ChooseAnswerViewHolder: ExerciseViewHolderGenerator{
             }
             // TODO: Sprawdź, czy działa jednokrotny wybór
         }
-    }
-
-    override fun createViewHolde(owner: LifecycleOwner, parent: ViewGroup): ExerciseViewHolder {
-        TODO("Not yet implemented")
     }
 }

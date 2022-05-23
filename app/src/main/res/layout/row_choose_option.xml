@@ -20,7 +20,7 @@
         android:layout_marginBottom="10dp"/>
 
     <LinearLayout
-        android:id="@+id/llCheckBoxes"
+        android:id="@+id/llAnswerSuggestions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
