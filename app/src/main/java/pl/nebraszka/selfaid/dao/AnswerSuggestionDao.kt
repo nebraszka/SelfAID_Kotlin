@@ -7,6 +7,6 @@ import pl.nebraszka.selfaid.entities.AnswerSuggestion
 
 @Dao
 interface AnswerSuggestionDao {
-    @Query("SELECT * FROM TB_Answer_Suggest" )
-        fun getAllAnswerSuggestions(): Flow<List<AnswerSuggestion>>
+    @Query("SELECT * FROM TB_Answer_Suggest WHERE question_id == :questionId" )
+        fun getAllAnswerSuggestions(questionId: Int): Flow<List<AnswerSuggestion>>
 }

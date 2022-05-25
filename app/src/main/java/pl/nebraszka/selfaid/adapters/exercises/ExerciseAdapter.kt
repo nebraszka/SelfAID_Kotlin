@@ -16,13 +16,13 @@ class ExerciseAdapter(val owner: LifecycleOwner) : ListAdapter<EJExercise, Exerc
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ExerciseViewHolder {
-       return ExerciseViewHolder.createViewHolder(parent, owner, viewType)
-    }
+       return ExerciseViewHolder.createViewHolder(parent, viewType)
+    } // zwraca odpowiedni layout do recycler view
 
     override fun onBindViewHolder(holder: ExerciseViewHolder, position: Int) {
         val current = getItem(position)
-        holder.bind(current.topic, current.exerciseType)
-    }
+        holder.bind( current.id, current.topic, current.exerciseType, owner)
+    } // przypisuje dane layoutom z recycler view, np tytul dla pytania
 
 
     class ExerciseComparator : DiffUtil.ItemCallback<EJExercise>() {

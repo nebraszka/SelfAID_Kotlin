@@ -3,10 +3,13 @@ package pl.nebraszka.selfaid.tools
 import android.widget.SeekBar
 import android.widget.TextView
 
-class SeekBarDescribtionChanger(var tvDescription: TextView) : SeekBar.OnSeekBarChangeListener {
+class SeekBarDescribtionChanger(val sb: SeekBar, var tvDescription: TextView) : SeekBar.OnSeekBarChangeListener {
 
+    init{
+        tvDescription.text = "${sb.progress}/${sb.max}"
+    }
     override fun onProgressChanged(sb: SeekBar, progress: Int, fromUser: Boolean) {
-        tvDescription.text = "$progress/5"
+        tvDescription.text = "$progress/${sb.max}"
     }
 
     override fun onStartTrackingTouch(p0: SeekBar?) {

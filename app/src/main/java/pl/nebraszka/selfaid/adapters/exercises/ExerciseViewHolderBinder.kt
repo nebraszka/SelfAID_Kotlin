@@ -1,19 +1,24 @@
 package pl.nebraszka.selfaid.adapters.exercises
 
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
+import android.widget.TextView
+import androidx.lifecycle.LifecycleOwner
 import pl.nebraszka.selfaid.enums.ExerciseType
 
-abstract class ExerciseViewHolderGenerator(
-    val parent: ViewGroup
+abstract class ExerciseViewHolderBinder(
+    val view: View,
+    val owner: LifecycleOwner,
+    val id: Int,
+    val exerciseType: Int,
+    val topic: String
 ){
-    protected var layoutId = ExerciseType.VIEW_QUESTION.layoutId
 
-    abstract fun createViewHolder(): ExerciseViewHolder
-
-    fun inflateLayout(): View {
-        return LayoutInflater.from(parent.context)
-            .inflate(layoutId, parent, false)
+    fun bindTopic(){
+        var tvTopic: TextView?
+        val exercise: ExerciseType = ExerciseType.findById(exerciseType)!!
+        tvTopic = view.findViewById(exercise.topicTextView)
+        tvTopic.text = topic
     }
+
+    abstract fun bind()
 }

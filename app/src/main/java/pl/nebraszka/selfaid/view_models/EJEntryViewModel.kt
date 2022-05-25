@@ -15,8 +15,6 @@ class EJEntryViewModel(private val repository: SelfAIDRepository): ViewModel() {
     }
     val allEmotions: LiveData<List<Emotion>> = repository.allEmotions.asLiveData()
     val allEJExercise: LiveData<List<EJExercise>> = repository.allExercises.asLiveData()
-    val allAnswerSuggestions: LiveData<List<AnswerSuggestion>> = repository.allAnswerSuggestions.asLiveData()
-
 
     fun getEmotion(name: String) : LiveData<Emotion>{
         return repository.getEmotion(name).asLiveData()
