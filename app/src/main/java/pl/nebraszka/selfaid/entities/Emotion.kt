@@ -11,8 +11,8 @@ data class Emotion(
     @ColumnInfo(name = "emotion") val emotion: String,
     @NonNull
     @ColumnInfo(name = "description") val description: String
-){
+) {
     @PrimaryKey(autoGenerate = true)
-    var id: Int = 1
+    var id: Int = 0
 
 }

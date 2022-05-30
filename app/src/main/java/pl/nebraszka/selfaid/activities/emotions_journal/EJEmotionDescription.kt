@@ -1,26 +1,25 @@
 package pl.nebraszka.selfaid.activities.emotions_journal
 
 import android.os.Bundle
-import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import com.google.gson.Gson
 import kotlinx.android.synthetic.main.emotion_describtion.*
 import pl.nebraszka.selfaid.R
-import pl.nebraszka.selfaid.SelfAIDApplication
 import pl.nebraszka.selfaid.entities.Emotion
-import pl.nebraszka.selfaid.view_models.EJEntryViewModel
-import pl.nebraszka.selfaid.view_models.EJEntryViewModelFactory
 
-class EJEmotionDescription: AppCompatActivity() {
+
+class EJEmotionDescription : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.emotion_describtion)
 
-        val chosenEmotion: Emotion = EJEntryViewModel.chosenEmotion!!
+        val gson = Gson()
+        val chosenEmotion: Emotion = gson.fromJson<Emotion>(intent.getStringExtra("EXTRA_EMOTION"), Emotion::class.java)
         tvEmotionName.text = chosenEmotion.emotion
         tvEmotionDescribtion.text = chosenEmotion.description
 
-        btnEmotionDescribtionBack.setOnClickListener{
+        btnEmotionDescribtionBack.setOnClickListener {
             this.finish()
         }
     }

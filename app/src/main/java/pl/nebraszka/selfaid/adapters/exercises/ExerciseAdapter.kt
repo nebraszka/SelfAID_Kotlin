@@ -16,12 +16,12 @@ class ExerciseAdapter(val owner: LifecycleOwner) : ListAdapter<EJExercise, Exerc
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ExerciseViewHolder {
-       return ExerciseViewHolder.createViewHolder(parent, viewType)
+        return ExerciseViewHolder.createViewHolder(parent, viewType)
     } // zwraca odpowiedni layout do recycler view
 
     override fun onBindViewHolder(holder: ExerciseViewHolder, position: Int) {
         val current = getItem(position)
-        holder.bind( current.id, current.topic, current.exerciseType, owner)
+        holder.bind(current.id, current.topic, current.exerciseType, owner)
     } // przypisuje dane layoutom z recycler view, np tytul dla pytania
 
 
@@ -31,7 +31,7 @@ class ExerciseAdapter(val owner: LifecycleOwner) : ListAdapter<EJExercise, Exerc
         }
 
         override fun areContentsTheSame(oldItem: EJExercise, newItem: EJExercise): Boolean {
-            return oldItem.topic.equals(newItem.topic)
+            return oldItem.topic == newItem.topic
         }
     }
 }

@@ -17,13 +17,21 @@
     <string name="EJ_Entry_Choose_Emotion">Wybierz emocję</string>
     <string name="EJ_Entry_Emotion_Describtion_Btn">Opis emocji</string>
     <string name="EJ_Entry_Save_Btn">Zapisz</string>
-    <string name="EJ_Entry_Add_New_Page_Btn">Zapisz</string>
+    <string name="EJ_Entry_Add_New_Page_Btn">Dodaj kolejną emocję</string>
 
     <!-- Emotions journal - description of emotion -->
     <string name="EJ_EmotionDescription_Emotion_Name">Emocja</string>
     <string name="EJ_Emotion_Descripiton_Describtion">Opis emocji</string>
     <string name="EJ_Emotion_Descripiton_Back_Btn">Powrót</string>
-    
+
+    <!-- Exercises -->
+    <string name="type_answer">Wpisz odpowiedź</string>
+
+    <!-- Choose date dialog -->
+    <string name="Date_Dialog_Cancel">Anuluj</string>
+    <string name="Date_Dialog_Save">Zatwierdź</string>
+    <string name="Date_Dialog_Choose_Date">Wybierz datę</string>
+    <string name="EJ_List_Entry_Name">Data\nTytuł</string>
 
 
 </resources>

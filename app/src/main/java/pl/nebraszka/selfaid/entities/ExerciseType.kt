@@ -11,5 +11,5 @@ data class ExerciseType(
     @ColumnInfo(name = "exercise_type") val exerciseType: String
 ) {
     @PrimaryKey(autoGenerate = true)
-    var id: Int = 1
+    var id: Int = 0
 }

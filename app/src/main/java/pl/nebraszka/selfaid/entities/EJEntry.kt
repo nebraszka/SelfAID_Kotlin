@@ -8,9 +8,9 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "TB_EJ_Entries")
 data class EJEntry(
     @NonNull
-    @ColumnInfo(name = "date") val date: String,
-    @ColumnInfo(defaultValue = "NULL", name = "title") val title: String?
-){
+    @ColumnInfo(name = "date") var date: String,
+    @ColumnInfo(name = "title") var title: String? = null
+) {
     @PrimaryKey(autoGenerate = true)
-    var id: Int = 1
+    var id: Int = 0
 }

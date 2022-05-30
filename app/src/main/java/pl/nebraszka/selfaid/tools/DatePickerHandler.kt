@@ -10,16 +10,16 @@ import java.util.*
 
 class DatePickerHandler {
 
-    companion object{
+    companion object {
 
-       private const val datePickerDialog: Int = R.layout.dialog_date_picker
+        private const val datePickerDialog: Int = R.layout.dialog_date_picker
 
         private var date: Calendar = Calendar.getInstance()
         private var chosenYear = date.get(Calendar.YEAR).toInt()
         private var chosenMonth = date.get(Calendar.MONTH).toInt()
         private var chosenDay = date.get(Calendar.DAY_OF_MONTH).toInt()
 
-        fun changeTextViewDate(context: Context, tv: TextView){
+        fun changeTextViewDate(context: Context, tv: TextView) {
             val dataPickerDialog = Dialog(context)
             dataPickerDialog.setContentView(datePickerDialog)
             dataPickerDialog.setCancelable(false)
@@ -32,11 +32,11 @@ class DatePickerHandler {
                     chosenYear = thisYear
                 })
 
-            dataPickerDialog.tvDatePickerSave.setOnClickListener{
+            dataPickerDialog.tvDatePickerSave.setOnClickListener {
                 tv.text = "$chosenDay / $chosenMonth / $chosenYear"
                 dataPickerDialog.dismiss()
             }
-            dataPickerDialog.tvDatePickerCancel.setOnClickListener{
+            dataPickerDialog.tvDatePickerCancel.setOnClickListener {
                 dataPickerDialog.dismiss()
             }
             dataPickerDialog.show()

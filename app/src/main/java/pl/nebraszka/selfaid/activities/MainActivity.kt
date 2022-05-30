@@ -1,8 +1,8 @@
 package pl.nebraszka.selfaid.activities
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.main_menu.*
 import pl.nebraszka.selfaid.R
 import pl.nebraszka.selfaid.activities.emotions_journal.EJMenu
@@ -18,4 +18,5 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
 }

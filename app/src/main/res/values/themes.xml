@@ -14,18 +14,4 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.SelfAID.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-
-    <style name="Theme.SelfAID.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="Theme.SelfAID.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
-    <style name="Theme_Dialog" parent="ThemeOverlay.AppCompat.Dialog">
-        <item name="android:windowMinWidthMajor">90%</item>
-        <item name="android:windowMinWidthMinor">90%</item>
-    </style>
-
 </resources>
