@@ -25,6 +25,24 @@ class SelfAIDRepository(
 
     @Suppress("RedundantSuspendModifier")
     @WorkerThread
+    fun getResponds(entryId: Int, page: Int, exerciseId: Int): Flow<List<EJAnswer>>{
+        return ejRespondDao.getRespondsForExercise(entryId, page, exerciseId)
+    }
+
+    @Suppress("RedundantSuspendModifier")
+    @WorkerThread
+    fun getEntryInfo(entryId: Int): Flow<EJEntry>{
+        return ejEntryDao.getEntryInfo(entryId)
+    }
+
+    @Suppress("RedundantSuspendModifier")
+    @WorkerThread
+    fun getEmotionInfo(pageId: Int): Flow<Emotion>{
+        return entryPageDao.getEmotion(pageId)
+    }
+
+    @Suppress("RedundantSuspendModifier")
+    @WorkerThread
     fun getEmotion(name: String): Flow<Emotion> {
         return emotionDao.getEmotion(name)
     }

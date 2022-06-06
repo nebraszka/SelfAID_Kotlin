@@ -11,15 +11,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SelfAID">
         <activity
-            android:name=".activities.emotions_journal.EJMenu"
+            android:name="pl.nebraszka.selfaid.activities.emotions_journal.EmotionsJournalActivity"
             android:exported="false" />
 
-        <activity android:name=".activities.emotions_journal.EJEmotionDescription"
+        <activity android:name="pl.nebraszka.selfaid.activities.emotions_journal.EJEmotionDescription"
             android:exported="false"/>
 
         <activity
-            android:name=".activities.emotions_journal.EJEntry"
+            android:name="pl.nebraszka.selfaid.activities.emotions_journal.EJNewEntry"
             android:exported="false" />
+
+        <activity
+            android:name="pl.nebraszka.selfaid.activities.emotions_journal.EJSavedEntry"
+            android:exported="false"/>
 
         <activity
             android:name=".activities.MainActivity"

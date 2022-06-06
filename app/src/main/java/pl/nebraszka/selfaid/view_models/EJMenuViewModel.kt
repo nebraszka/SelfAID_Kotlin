@@ -7,7 +7,6 @@ import pl.nebraszka.selfaid.entities.*
 import pl.nebraszka.selfaid.repositories.SelfAIDRepository
 
 class EJMenuViewModel(private val repository: SelfAIDRepository) : ViewModel() {
-    var numberOfEntries = repository.countEntries().asLiveData()
     val allEntries = repository.allEntries.asLiveData()
 }
 

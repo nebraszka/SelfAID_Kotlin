@@ -16,6 +16,7 @@ class EntryAdapter(private val owner: LifecycleOwner) : ListAdapter<EJEntry, Ent
     override fun onBindViewHolder(holder: EntryViewHolder, position: Int) {
         val current = getItem(position)
         holder.bind(current.id, owner, position)
+        holder.setUpClickListener()
     }
 
     class EntryComparator : DiffUtil.ItemCallback<EJEntry>() {

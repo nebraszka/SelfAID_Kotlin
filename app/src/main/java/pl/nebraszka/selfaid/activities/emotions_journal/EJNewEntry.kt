@@ -26,7 +26,7 @@ import pl.nebraszka.selfaid.tools.RespondsHandler
 import pl.nebraszka.selfaid.view_models.EJEntryViewModel
 import pl.nebraszka.selfaid.view_models.EJEntryViewModelFactory
 
-class EJEntry : AppCompatActivity(), AdapterView.OnItemSelectedListener {
+class EJNewEntry : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     private val viewModel: EJEntryViewModel by viewModels {
         EJEntryViewModelFactory((application as SelfAIDApplication).repository)
     }
@@ -66,7 +66,8 @@ class EJEntry : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
 
         btnEJSaveEntry.setOnClickListener {
-            var newEntry = EJEntry(tvEJChosenDate.text.toString(), etEJTitle.text.toString())
+            var date: String = reverseDate(tvEJChosenDate.text.toString())
+            var newEntry = EJEntry(date, etEJTitle.text.toString())
             viewModel.addEntry(newEntry)
 
             viewModel.entryId.observe(this, Observer<Long> {
@@ -81,7 +82,7 @@ class EJEntry : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                     ) as MutableList<EJRespond>)
             })
 
-            val intent = Intent(this, EJMenu::class.java)
+            val intent = Intent(this, EmotionsJournalActivity::class.java)
             startActivity(intent)
 
         }
@@ -113,8 +114,12 @@ class EJEntry : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                 viewModel.chosenEmotion = it
             }
     }
-
     override fun onNothingSelected(p0: AdapterView<*>?) {
+    }
+
+    // TODO: to do tools
+    private fun reverseDate(date: String): String{
+        return (date.substring(10, 14) + "/" + date.substring(5, 7) + "/" + date.substring(0,2))
     }
 }
 

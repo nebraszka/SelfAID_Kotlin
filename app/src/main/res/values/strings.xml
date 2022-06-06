@@ -32,6 +32,8 @@
     <string name="Date_Dialog_Save">Zatwierdź</string>
     <string name="Date_Dialog_Choose_Date">Wybierz datę</string>
     <string name="EJ_List_Entry_Name">Data\nTytuł</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

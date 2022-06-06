@@ -17,8 +17,7 @@ import androidx.room.PrimaryKey
     )]
 )
 data class AnswerSuggestion(
-    @NonNull
-    @ColumnInfo(name = "answer") val answer: String,
+    @ColumnInfo(name = "answer") val answer: String?,
     @NonNull
     @ColumnInfo(name = "question_id", index = true) val questionId: Int
 ) {

@@ -12,9 +12,12 @@ interface EJEntryDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(ejEntry: EJEntry): Long
 
-    @Query("SELECT * FROM TB_EJ_Entries")
+    @Query("SELECT * FROM TB_EJ_Entries ORDER BY date DESC")
     fun getEntries(): Flow<List<EJEntry>>
 
     @Query("SELECT COUNT(*) FROM TB_EJ_Entries")
     fun countEntries(): Flow<Int>
+
+    @Query("SELECT * FROM TB_EJ_Entries WHERE id=:entryId")
+    fun getEntryInfo(entryId: Int): Flow<EJEntry>
 }

@@ -20,20 +20,22 @@ class DatePickerHandler {
         private var chosenDay = date.get(Calendar.DAY_OF_MONTH).toInt()
 
         fun changeTextViewDate(context: Context, tv: TextView) {
+            Locale.setDefault(Locale.forLanguageTag("pl"))
             val dataPickerDialog = Dialog(context)
             dataPickerDialog.setContentView(datePickerDialog)
             dataPickerDialog.setCancelable(false)
-
             dataPickerDialog.EJDatePicker.init(
                 chosenYear, chosenMonth, chosenDay, DatePicker.OnDateChangedListener
-                { view2, thisYear, thisMonth, thisDay ->
-                    chosenMonth = thisMonth + 1
+                { _, thisYear, thisMonth, thisDay ->
                     chosenDay = thisDay
+                    chosenMonth = thisMonth
                     chosenYear = thisYear
                 })
 
             dataPickerDialog.tvDatePickerSave.setOnClickListener {
-                tv.text = "$chosenDay / $chosenMonth / $chosenYear"
+
+                tv.text = "${addZeroIfNeeded(chosenDay)} / ${addZeroIfNeeded(chosenMonth+1)} / $chosenYear"
+
                 dataPickerDialog.dismiss()
             }
             dataPickerDialog.tvDatePickerCancel.setOnClickListener {
@@ -41,5 +43,15 @@ class DatePickerHandler {
             }
             dataPickerDialog.show()
         }
+
+        private fun addZeroIfNeeded(dayOrMonth: Int): String{
+            return if(dayOrMonth < 10){
+                "0${dayOrMonth}"
+            }
+            else {
+                dayOrMonth.toString()
+            }
+        }
     }
+
 }
