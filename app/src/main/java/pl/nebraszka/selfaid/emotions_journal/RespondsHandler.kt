@@ -1,4 +1,4 @@
-package pl.nebraszka.selfaid.tools
+package pl.nebraszka.selfaid.emotions_journal
 
 import android.view.View
 import android.widget.CheckBox
@@ -21,33 +21,28 @@ class RespondsHandler {
             for (i in 0 until recyclerView.childCount) {
                 val child: View = recyclerView.getChildAt(i)
                 val viewHolder = recyclerView.getChildViewHolder(child)
-                val exerciseType = ExerciseType.findById(viewHolder.itemViewType)
 
-                when (exerciseType) {
+                when (ExerciseType.findById(viewHolder.itemViewType)) {
                     ExerciseType.VIEW_QUESTION -> {
                         val answer = child.etQuestionRow.text.toString()
                         if (answer.isEmpty())
                             continue
                         else
                             responds += EJRespond(
-                                child.id,
-                                pageId.toInt(),
-                                null,
-                                answer
+                                child.id, pageId.toInt(), null, answer
                             )
                     };
+
                     ExerciseType.VIEW_CHOOSE_OPTION -> {
                         val chosenAnswer = getChosenAnswer(child.llAnswerSuggestions)
                         if (chosenAnswer == null)
                             continue
                         else
                             responds += EJRespond(
-                                child.id,
-                                pageId.toInt(),
-                                chosenAnswer,
-                                null
+                                child.id, pageId.toInt(), chosenAnswer, null
                             )
                     };
+
                     ExerciseType.VIEW_MULTICHOOSE_OPTION -> {
                         val checkedBoxes = getCheckedBoxes(child.llAnswerSuggestions)
                         if (checkedBoxes.isEmpty())
@@ -55,35 +50,29 @@ class RespondsHandler {
                         else {
                             for (checkedBox in checkedBoxes) {
                                 responds += EJRespond(
-                                    child.id,
-                                    pageId.toInt(),
-                                    checkedBox,
-                                    null
+                                    child.id, pageId.toInt(), checkedBox, null
                                 )
                             }
                         }
                     };
+
                     ExerciseType.VIEW_SCALE_QUESTION -> {
                         val answer = child.scaleQuestionRow.progress
                         responds += EJRespond(
-                            child.id,
-                            pageId.toInt(),
-                            null,
-                            answer.toString()
+                            child.id, pageId.toInt(), null, answer.toString()
                         )
-                    }
+                    };
+
                     ExerciseType.VIEW_TODO_TASK -> {
                         val isDone = child.checkBoxTaskRow.isChecked
                         if (isDone) {
                             responds += EJRespond(
-                                child.id,
-                                pageId.toInt(),
-                                null,
-                                isDone.toString()
+                                child.id, pageId.toInt(), null, isDone.toString()
                             )
                         }
-                    }
-                    else -> continue;
+                    };
+                    else ->
+                        continue;
                 }
             }
             return responds

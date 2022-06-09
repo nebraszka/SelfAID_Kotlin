@@ -4,21 +4,22 @@ import android.view.View
 import android.widget.TextView
 import androidx.lifecycle.LifecycleOwner
 import kotlinx.android.synthetic.main.row_scale_question.view.*
-import pl.nebraszka.selfaid.tools.SeekBarDescribtionChanger
+import pl.nebraszka.selfaid.entities.EJExercise
+import pl.nebraszka.selfaid.tools.SeekBarDescriptionChanger
 
 class ScaleQuestionViewHolder(
-    view: View, owner: LifecycleOwner, id: Int, exerciseType: Int, topic: String
-) : ExerciseViewHolderBinder(view, owner, id, exerciseType, topic) {
+    view: View, owner: LifecycleOwner, exercise: EJExercise
+) : ExerciseViewHolderBinder(view, owner, exercise) {
 
-    fun bindProgressInfo() {
-        val info: TextView = view.tvScaleAnswer
+    private fun bindProgressInfo() {
+        val answer: TextView = view.tvScaleAnswer
         view.scaleQuestionRow.setOnSeekBarChangeListener(
-            SeekBarDescribtionChanger(view.scaleQuestionRow, info)
+            SeekBarDescriptionChanger(view.scaleQuestionRow, answer)
         )
     }
 
     override fun bind() {
         bindProgressInfo()
-        bindTopic()
+        bindTopicAndId()
     }
 }

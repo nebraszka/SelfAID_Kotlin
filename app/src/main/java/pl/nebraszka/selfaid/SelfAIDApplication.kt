@@ -22,5 +22,4 @@ class SelfAIDApplication : Application() {
             database.ejRespondDao()
         )
     }
-
 }

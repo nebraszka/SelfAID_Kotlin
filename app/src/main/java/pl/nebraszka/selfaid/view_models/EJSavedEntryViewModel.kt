@@ -1,6 +1,7 @@
 package pl.nebraszka.selfaid.view_models
 
 import androidx.lifecycle.*
+import kotlinx.coroutines.flow.Flow
 import pl.nebraszka.selfaid.entities.*
 import pl.nebraszka.selfaid.repositories.SelfAIDRepository
 
@@ -26,6 +27,10 @@ class EJSavedEntryViewModel(private val repository: SelfAIDRepository) : ViewMod
 
     fun getEmotionInfo(pageId: Int): LiveData<Emotion>{
         return repository.getEmotionInfo(pageId).asLiveData()
+    }
+
+    fun getEntryEmotion(entryId: Int): LiveData<Emotion>{
+        return repository.getEntryEmotion(entryId).asLiveData()
     }
 }
 

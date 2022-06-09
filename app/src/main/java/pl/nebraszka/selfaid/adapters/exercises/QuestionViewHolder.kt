@@ -2,14 +2,13 @@ package pl.nebraszka.selfaid.adapters.exercises
 
 import android.view.View
 import androidx.lifecycle.LifecycleOwner
-import kotlinx.android.synthetic.main.row_question.view.*
-import pl.nebraszka.selfaid.entities.EJRespond
+import pl.nebraszka.selfaid.entities.EJExercise
 
 class QuestionViewHolder(
-    view: View, owner: LifecycleOwner, id: Int, exerciseType: Int, topic: String
-) : ExerciseViewHolderBinder(view, owner, id, exerciseType, topic) {
+    view: View, owner: LifecycleOwner, exercise: EJExercise
+) : ExerciseViewHolderBinder(view, owner, exercise) {
 
     override fun bind() {
-        bindTopic()
+        bindTopicAndId()
     }
 }

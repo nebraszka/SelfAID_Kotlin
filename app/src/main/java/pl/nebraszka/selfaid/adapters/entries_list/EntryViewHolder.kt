@@ -6,54 +6,59 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.LifecycleOwner
-import androidx.lifecycle.Observer
 import androidx.lifecycle.asLiveData
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.row_entry.view.*
 import pl.nebraszka.selfaid.R
 import pl.nebraszka.selfaid.SelfAIDDatabase
-import pl.nebraszka.selfaid.activities.emotions_journal.EJSavedEntry
+import pl.nebraszka.selfaid.emotions_journal.activities.EJSavedEntry
+import pl.nebraszka.selfaid.entities.EJEntry
+import pl.nebraszka.selfaid.tools.date.DateEditor
 
-class EntryViewHolder(itemView: View, private val myContext: Context) :RecyclerView.ViewHolder(itemView){
+class EntryViewHolder(itemView: View, private val context: Context) :
+    RecyclerView.ViewHolder(itemView) {
 
     private val database = SelfAIDDatabase.getDatabase(itemView.context)
-    private val entries = database.ejEntryDao().getEntries().asLiveData()
+    private val entries = database.ejEntryDao().getAllEntries().asLiveData()
 
-    companion object{
-        fun createViewHolder(parent: ViewGroup): EntryViewHolder{
+    companion object {
+        fun createViewHolder(parent: ViewGroup): EntryViewHolder {
             val view: View = LayoutInflater.from(parent.context).inflate(
-                R.layout.row_entry, parent, false)
+                R.layout.row_entry, parent, false
+            )
             return EntryViewHolder(view, parent.context)
         }
     }
-    fun bind(id: Int, owner: LifecycleOwner, position: Int) {
-        entries.observe(owner, Observer {
-            for(entry in it){
-                if(entry.id == id){
-                    itemView.id = id
-                    itemView.btnEntry.text =
-                        if(entry.title.isNullOrBlank())
-                            reverseDate(entry.date)
-                        else
-                            entry.title + "\n" + reverseDate(entry.date)
-                }
+
+    fun bind(entry: EJEntry, owner: LifecycleOwner, position: Int) {
+        itemView.id = entry.id
+        val reverseDate = DateEditor.reverseDate(entry.date)
+
+        itemView.btnEntry.text =
+            if (entry.title.isNullOrBlank())
+                reverseDate
+            else
+                entry.title + '\n' + reverseDate
+
+        val color =
+            if (position % 2 == 0 && position % 3 != 0) {
+                R.color.said_peach
+            } else if (position % 3 == 0) {
+                R.color.said_pink_light
+            } else {
+                R.color.said_pink_dark
             }
-        })
-        if(position%2 == 0){
-            itemView.btnEntry.setBackgroundColor(itemView.btnEntry.getContext().getResources().getColor(R.color.said_peach));
-        }
+
+        itemView.btnEntry.setBackgroundColor(
+            itemView.btnEntry.context.resources.getColor(color)
+        );
     }
 
-    fun reverseDate(date: String): String{
-        return (date.substring(8,10) + " / " + date.substring(5,7) + " / " + date.substring(0,4))
-    }
-
-    fun setUpClickListener(){
+    fun setUpClickListener() {
         itemView.btnEntry.setOnClickListener {
-            val intent = Intent(myContext, EJSavedEntry::class.java)
+            val intent = Intent(context, EJSavedEntry::class.java)
             intent.putExtra("EXTRA_ENTRY_ID", itemView.id)
-            myContext.startActivity(intent)
+            context.startActivity(intent)
         }
     }
-
 }

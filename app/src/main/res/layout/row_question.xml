@@ -26,7 +26,7 @@
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:fontFamily="@font/ubuntu_medium"
-        android:hint="@string/type_answer"/>
+        android:hint="@string/Type_Answer"/>
 
 
 </LinearLayout>

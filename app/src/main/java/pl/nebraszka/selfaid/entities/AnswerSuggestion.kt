@@ -14,7 +14,7 @@ import androidx.room.PrimaryKey
             parentColumns = arrayOf("id"),
             childColumns = arrayOf("question_id"),
             onDelete = ForeignKey.CASCADE
-    )]
+        )]
 )
 data class AnswerSuggestion(
     @ColumnInfo(name = "answer") val answer: String?,

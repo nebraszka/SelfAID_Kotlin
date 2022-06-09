@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.lifecycle.LifecycleOwner
 import androidx.recyclerview.widget.RecyclerView
+import pl.nebraszka.selfaid.entities.EJExercise
 import pl.nebraszka.selfaid.enums.ExerciseType
 import pl.nebraszka.selfaid.exceptions.UnknownExerciseTypeException
 
@@ -29,19 +30,18 @@ class ExerciseViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         }
     }
 
-    fun bind(id: Int, text: String, exerciseType: Int, owner: LifecycleOwner) {
-        itemView.id = id
-        when (exerciseType) {
+    fun bind(exercise: EJExercise, owner: LifecycleOwner) {
+        when (exercise.exerciseType) {
             ExerciseType.VIEW_TODO_TASK.id ->
-                TaskViewHolder(itemView, owner, id, exerciseType, text).bind();
+                TaskViewHolder(itemView, owner, exercise).bind();
             ExerciseType.VIEW_QUESTION.id ->
-                QuestionViewHolder(itemView, owner, id, exerciseType, text).bind();
+                QuestionViewHolder(itemView, owner, exercise).bind();
             ExerciseType.VIEW_SCALE_QUESTION.id ->
-                ScaleQuestionViewHolder(itemView, owner, id, exerciseType, text).bind();
+                ScaleQuestionViewHolder(itemView, owner, exercise).bind();
             ExerciseType.VIEW_CHOOSE_OPTION.id ->
-                ChooseAnswerViewHolder(itemView, owner, id, exerciseType, text, false).bind();
+                ChooseAnswerViewHolder(itemView, owner, exercise, false).bind();
             ExerciseType.VIEW_MULTICHOOSE_OPTION.id ->
-                ChooseAnswerViewHolder(itemView, owner, id, exerciseType, text, true).bind();
+                ChooseAnswerViewHolder(itemView, owner, exercise, true).bind();
             else ->
                 throw Exception("todo: twoj wyjatek");
             // TODO : wyjątek

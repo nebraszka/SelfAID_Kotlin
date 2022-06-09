@@ -1,11 +1,10 @@
-package pl.nebraszka.selfaid.activities
+package pl.nebraszka.selfaid
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.main_menu.*
-import pl.nebraszka.selfaid.R
-import pl.nebraszka.selfaid.activities.emotions_journal.EmotionsJournalActivity
+import pl.nebraszka.selfaid.emotions_journal.activities.EJMenu
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,9 +13,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.main_menu)
 
         btnEmotionsJournal.setOnClickListener {
-            val intent = Intent(this, EmotionsJournalActivity::class.java)
+            val intent = Intent(this, EJMenu::class.java)
             startActivity(intent)
         }
     }
-
 }

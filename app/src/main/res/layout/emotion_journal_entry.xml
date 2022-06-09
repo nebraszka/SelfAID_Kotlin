@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context=".activities.emotions_journal.EJNewEntry">
+    tools:context=".emotions_journal.activities.EJNewEntry">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -94,8 +94,7 @@
                     tools:visibility="visible"
                     android:fontFamily="@font/ubuntu_medium"
                     android:textSize="18sp"
-                    android:padding="20dp"
-                    tools:text="AAAA" />
+                    android:padding="20dp"/>
 
 
             </LinearLayout>
@@ -169,6 +168,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_marginVertical="2dp"
+                    android:visibility="gone"
+                    android:clickable="false"
 
                     android:backgroundTint="@color/said_pink_dark"
                     android:fontFamily="@font/ubuntu_medium"
@@ -183,6 +184,8 @@
 
                     android:backgroundTint="@color/said_peach"
                     android:fontFamily="@font/ubuntu_medium"
+                    android:visibility="gone"
+                    android:clickable="false"
                     android:text="@string/EJ_Entry_Add_New_Page_Btn" />
             </LinearLayout>
 

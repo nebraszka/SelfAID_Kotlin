@@ -46,6 +46,7 @@
         <entry key="app/src/main/res/font/fonts.xml" value="0.3194444444444444" />
         <entry key="app/src/main/res/layout-land/emjour_menu.xml" value="0.50625" />
         <entry key="app/src/main/res/layout-land/emotion_journal_menu.xml" value="0.25" />
+        <entry key="app/src/main/res/layout-v26/row_scale_question.xml" value="0.3692708333333333" />
         <entry key="app/src/main/res/layout/activity_eemotions_journal_menu.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_emotions_journal.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
@@ -59,7 +60,7 @@
         <entry key="app/src/main/res/layout/emotion_describtion.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/emotion_description.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/emotion_journal.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/emotion_journal_entry.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/emotion_journal_entry.xml" value="0.1" />
         <entry key="app/src/main/res/layout/emotion_journal_menu.xml" value="0.33" />
         <entry key="app/src/main/res/layout/emotion_journal_new_page.xml" value="0.33" />
         <entry key="app/src/main/res/layout/first_entry.xml" value="0.35625" />

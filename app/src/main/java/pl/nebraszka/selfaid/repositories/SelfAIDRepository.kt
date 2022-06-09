@@ -14,43 +14,14 @@ class SelfAIDRepository(
     private val ejRespondDao: EJRespondDao
 ) {
     val allEmotions: Flow<List<Emotion>> = emotionDao.getAlphabetizedEmotions()
-    val allExercises: Flow<List<EJExercise>> = ejExerciseDao.getExercises()
-    val allEntries: Flow<List<EJEntry>> = ejEntryDao.getEntries()
+    val allExercises: Flow<List<EJExercise>> = ejExerciseDao.getAllExercises()
+    val allEntries: Flow<List<EJEntry>> = ejEntryDao.getAllEntries()
 
-    @Suppress("RedundantSuspendModifier")
-    @WorkerThread
-    fun countEntries(): Flow<Int>{
-        return ejEntryDao.countEntries()
-    }
-
-    @Suppress("RedundantSuspendModifier")
-    @WorkerThread
-    fun getResponds(entryId: Int, page: Int, exerciseId: Int): Flow<List<EJAnswer>>{
-        return ejRespondDao.getRespondsForExercise(entryId, page, exerciseId)
-    }
-
-    @Suppress("RedundantSuspendModifier")
-    @WorkerThread
-    fun getEntryInfo(entryId: Int): Flow<EJEntry>{
-        return ejEntryDao.getEntryInfo(entryId)
-    }
-
-    @Suppress("RedundantSuspendModifier")
-    @WorkerThread
-    fun getEmotionInfo(pageId: Int): Flow<Emotion>{
-        return entryPageDao.getEmotion(pageId)
-    }
 
     @Suppress("RedundantSuspendModifier")
     @WorkerThread
     fun getEmotion(name: String): Flow<Emotion> {
         return emotionDao.getEmotion(name)
-    }
-
-    @Suppress("RedundantSuspendModifier")
-    @WorkerThread
-    fun getAnswerSuggestions(questionId: Int): Flow<List<AnswerSuggestion>> {
-        return answerSuggestionDao.getAllAnswerSuggestions(questionId)
     }
 
     @Suppress("RedundantSuspendModifier")
@@ -61,13 +32,37 @@ class SelfAIDRepository(
 
     @Suppress("RedundantSuspendModifier")
     @WorkerThread
+    fun getEmotionInfo(pageId: Int): Flow<Emotion> {
+        return entryPageDao.getEmotion(pageId)
+    }
+
+    @Suppress("RedundantSuspendModifier")
+    @WorkerThread
     suspend fun insertEntry(entry: EJEntry): Long {
         return ejEntryDao.insert(entry)
     }
 
     @Suppress("RedundantSuspendModifier")
     @WorkerThread
+    fun getEntryInfo(entryId: Int): Flow<EJEntry> {
+        return ejEntryDao.getEntry(entryId)
+    }
+
+    @Suppress("RedundantSuspendModifier")
+    @WorkerThread
+    fun getEntryEmotion(entryId: Int): Flow<Emotion> {
+        return ejEntryDao.getEntryEmotion(entryId)
+    }
+
+    @Suppress("RedundantSuspendModifier")
+    @WorkerThread
     suspend fun insertResponds(responds: List<EJRespond>) {
-        ejRespondDao.insertAll(responds)
+        ejRespondDao.insertAllResponds(responds)
+    }
+
+    @Suppress("RedundantSuspendModifier")
+    @WorkerThread
+    fun getResponds(entryId: Int, page: Int, exerciseId: Int): Flow<List<EJAnswer>> {
+        return ejRespondDao.getRespondsForExercise(entryId, page, exerciseId)
     }
 }

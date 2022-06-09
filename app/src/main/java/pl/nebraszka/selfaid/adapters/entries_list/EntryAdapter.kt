@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.ListAdapter
 import pl.nebraszka.selfaid.entities.EJEntry
 
 class EntryAdapter(private val owner: LifecycleOwner) : ListAdapter<EJEntry, EntryViewHolder>(
-    EntryAdapter.EntryComparator()
+    EntryComparator()
 ) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EntryViewHolder {
         return EntryViewHolder.createViewHolder(parent)
@@ -15,7 +15,7 @@ class EntryAdapter(private val owner: LifecycleOwner) : ListAdapter<EJEntry, Ent
 
     override fun onBindViewHolder(holder: EntryViewHolder, position: Int) {
         val current = getItem(position)
-        holder.bind(current.id, owner, position)
+        holder.bind(current, owner, position)
         holder.setUpClickListener()
     }
 

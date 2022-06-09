@@ -37,9 +37,9 @@ abstract class SelfAIDDatabase : RoomDatabase() {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     SelfAIDDatabase::class.java,
-                    "selfaid.db"
+                    context.resources.getString(R.string.database_name)
                 )
-                    .createFromAsset("database/selfaid.db")
+                    .createFromAsset(context.resources.getString(R.string.database_path))
                     .build()
 
                 INSTANCE = instance

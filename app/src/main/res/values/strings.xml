@@ -1,9 +1,12 @@
 <resources>
     <string name="app_name">SelfAID</string>
+    <string name="database_name">selfaid.db</string>
+    <string name="database_path">database/selfaid.db</string>
+
     <!-- Main menu -->
-    <string name="menu_Challenges_Btn">Wyzwania</string>
-    <string name="menu_Emotions_Journal_Btn">Dziennik Emocji</string>
-    <string name="menu_About_Us_Btn">O nas</string>
+    <string name="Menu_Challenges_Btn">Wyzwania</string>
+    <string name="Menu_Emotions_Journal_Btn">Dziennik Emocji</string>
+    <string name="Menu_About_Us_Btn">O nas</string>
 
     <!-- Emotions journal - menu -->
     <string name="EJ_Add_New_Entry_Btn">Dodaj wpis</string>
@@ -19,21 +22,32 @@
     <string name="EJ_Entry_Save_Btn">Zapisz</string>
     <string name="EJ_Entry_Add_New_Page_Btn">Dodaj kolejną emocję</string>
 
+    <string name="Date">%1$s / %2$s / %3$d</string>
+
     <!-- Emotions journal - description of emotion -->
     <string name="EJ_EmotionDescription_Emotion_Name">Emocja</string>
     <string name="EJ_Emotion_Descripiton_Describtion">Opis emocji</string>
     <string name="EJ_Emotion_Descripiton_Back_Btn">Powrót</string>
 
+    <!-- Emotions journal - saved entry -->
+    <string name="Blank_Topic">Brak tematu</string>
+    <string name="No_Respond">Brak odpowiedzi</string>
+    <string name="Checked">Zaznaczono</string>
+    <string name="Unchecked">Nie zaznaczono</string>
+    <string name="None_Checked">Nie zaznaczono żadnej z opcji</string>
+
+
     <!-- Exercises -->
-    <string name="type_answer">Wpisz odpowiedź</string>
+    <string name="Type_Answer">Wpisz odpowiedź</string>
+    <string name="Progress_Scale_Question">%1$d/%2$d</string>
 
     <!-- Choose date dialog -->
     <string name="Date_Dialog_Cancel">Anuluj</string>
     <string name="Date_Dialog_Save">Zatwierdź</string>
     <string name="Date_Dialog_Choose_Date">Wybierz datę</string>
     <string name="EJ_List_Entry_Name">Data\nTytuł</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
+
+    <string name="EJ_SavedEntry_ChosenEmotion">Wybrana emocja:</string>
 
 </resources>

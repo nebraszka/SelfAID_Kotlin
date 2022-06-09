@@ -1,4 +1,4 @@
-package pl.nebraszka.selfaid.tools
+package pl.nebraszka.selfaid.tools.date
 
 import android.app.Dialog
 import android.content.Context
@@ -15,15 +15,17 @@ class DatePickerHandler {
         private const val datePickerDialog: Int = R.layout.dialog_date_picker
 
         private var date: Calendar = Calendar.getInstance()
-        private var chosenYear = date.get(Calendar.YEAR).toInt()
-        private var chosenMonth = date.get(Calendar.MONTH).toInt()
-        private var chosenDay = date.get(Calendar.DAY_OF_MONTH).toInt()
+        private var chosenYear = date[Calendar.YEAR].toInt()
+        private var chosenMonth = date[Calendar.MONTH].toInt()
+        private var chosenDay = date[Calendar.DAY_OF_MONTH].toInt()
 
         fun changeTextViewDate(context: Context, tv: TextView) {
             Locale.setDefault(Locale.forLanguageTag("pl"))
+
             val dataPickerDialog = Dialog(context)
             dataPickerDialog.setContentView(datePickerDialog)
             dataPickerDialog.setCancelable(false)
+
             dataPickerDialog.EJDatePicker.init(
                 chosenYear, chosenMonth, chosenDay, DatePicker.OnDateChangedListener
                 { _, thisYear, thisMonth, thisDay ->
@@ -33,8 +35,12 @@ class DatePickerHandler {
                 })
 
             dataPickerDialog.tvDatePickerSave.setOnClickListener {
-
-                tv.text = "${addZeroIfNeeded(chosenDay)} / ${addZeroIfNeeded(chosenMonth+1)} / $chosenYear"
+                tv.text = context.getString(
+                    R.string.Date,
+                    DateEditor.addZeroIfNeeded(chosenDay),
+                    DateEditor.addZeroIfNeeded(chosenMonth + 1),
+                    chosenYear
+                )
 
                 dataPickerDialog.dismiss()
             }
@@ -43,15 +49,5 @@ class DatePickerHandler {
             }
             dataPickerDialog.show()
         }
-
-        private fun addZeroIfNeeded(dayOrMonth: Int): String{
-            return if(dayOrMonth < 10){
-                "0${dayOrMonth}"
-            }
-            else {
-                dayOrMonth.toString()
-            }
-        }
     }
-
 }
