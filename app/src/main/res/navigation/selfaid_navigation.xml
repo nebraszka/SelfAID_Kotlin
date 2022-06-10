@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/selfaid_navigation"
+    app:startDestination="@id/mainMenu">
+
+    <fragment
+        android:id="@+id/mainMenu"
+        android:name="pl.nebraszka.selfaid.emotions_journal.fragments.MainMenu"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" >
+        <action
+            android:id="@+id/action_mainMenu_to_emotionsJournalMenu"
+            app:destination="@id/emotionsJournalMenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/emotionsJournalMenu"
+        android:name="pl.nebraszka.selfaid.emotions_journal.fragments.EmotionsJournalMenu"
+        android:label="fragment_emotions_journal_menu"
+        tools:layout="@layout/fragment_emotions_journal_menu" >
+        <action
+            android:id="@+id/action_emotionsJournalMenu_to_mainMenu"
+            app:destination="@id/mainMenu" />
+        <action
+            android:id="@+id/action_emotionsJournalMenu_to_emotionsJournalEntry"
+            app:destination="@id/emotionsJournalEntry" />
+        <action
+            android:id="@+id/action_emotionsJournalMenu_to_emotionsJournalSavedEntry"
+            app:destination="@id/emotionsJournalSavedEntry" />
+    </fragment>
+    <fragment
+        android:id="@+id/emotionsJournalEntry"
+        android:name="pl.nebraszka.selfaid.emotions_journal.fragments.EmotionsJournalNewEntry"
+        android:label="fragment_emotions_journal_entry"
+        tools:layout="@layout/fragment_emotions_journal_new_entry" >
+        <action
+            android:id="@+id/action_emotionsJournalEntry_to_emotionsJournalMenu"
+            app:destination="@id/emotionsJournalMenu" />
+        <action
+            android:id="@+id/action_emotionsJournalNewEntry_to_emotionDescription"
+            app:destination="@id/emotionDescription" />
+    </fragment>
+    <fragment
+        android:id="@+id/emotionDescription"
+        android:name="pl.nebraszka.selfaid.emotions_journal.fragments.EmotionDescription"
+        android:label="fragment_emotion_description"
+        tools:layout="@layout/fragment_emotion_description" >
+        <action
+            android:id="@+id/action_emotionDescription_to_emotionsJournalEntry"
+            app:destination="@id/emotionsJournalEntry" />
+        <action
+            android:id="@+id/action_emotionDescription_to_emotionsJournalSavedEntry"
+            app:destination="@id/emotionsJournalSavedEntry" />
+    </fragment>
+    <fragment
+        android:id="@+id/emotionsJournalSavedEntry"
+        android:name="pl.nebraszka.selfaid.emotions_journal.fragments.EmotionsJournalSavedEntry"
+        android:label="fragment_emotions_journal_saved_entry"
+        tools:layout="@layout/fragment_emotions_journal_saved_entry" >
+        <action
+            android:id="@+id/action_emotionsJournalSavedEntry_to_emotionsJournalMenu"
+            app:destination="@id/emotionsJournalMenu" />
+        <action
+            android:id="@+id/action_emotionsJournalSavedEntry_to_emotionDescription"
+            app:destination="@id/emotionDescription" />
+    </fragment>
+</navigation>

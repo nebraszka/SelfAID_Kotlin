@@ -6,7 +6,7 @@
     tools:context=".emotions_journal.activities.`EJMenu\`">
 
     <ImageButton
-        android:id="@+id/btnEJFirstEntry"
+        android:id="@+id/btnnEJFirstEntry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

@@ -4,14 +4,14 @@ import android.content.Context
 import android.content.Intent
 import android.widget.ArrayAdapter
 import android.widget.Spinner
-import pl.nebraszka.selfaid.emotions_journal.activities.EJEmotionDescription
+import pl.nebraszka.selfaid.emotions_journal.fragments.EmotionDescription
 import pl.nebraszka.selfaid.entities.Emotion
 
 class EmotionSectionManager {
 
     companion object {
         fun emotionInfoIntent(context: Context, emotion: Emotion): Intent {
-            val intent = Intent(context, EJEmotionDescription::class.java)
+            val intent = Intent(context, EmotionDescription::class.java)
             intent.putExtra("EXTRA_EMOTION_NAME", emotion.emotion)
             intent.putExtra("EXTRA_EMOTION_DESCRIPTION", emotion.description)
             return intent

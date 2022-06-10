@@ -1,20 +1,15 @@
 package pl.nebraszka.selfaid
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.main_menu.*
-import pl.nebraszka.selfaid.emotions_journal.activities.EJMenu
+import pl.nebraszka.selfaid.emotions_journal.fragments.MainMenu
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.main_menu)
+        setContentView(R.layout.main_activity)
 
-        btnEmotionsJournal.setOnClickListener {
-            val intent = Intent(this, EJMenu::class.java)
-            startActivity(intent)
-        }
+        supportFragmentManager.beginTransaction().replace(R.id.mainContainerView, MainMenu()).commit()
     }
 }

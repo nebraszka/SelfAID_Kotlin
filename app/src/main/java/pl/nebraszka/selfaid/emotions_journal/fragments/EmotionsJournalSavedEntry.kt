@@ -1,40 +1,51 @@
-package pl.nebraszka.selfaid.emotions_journal.activities
+package pl.nebraszka.selfaid.emotions_journal.fragments
 
 import android.os.Bundle
-import androidx.activity.viewModels
-import androidx.appcompat.app.AppCompatActivity
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.emotion_journal_entry.*
+import kotlinx.android.synthetic.main.fragment_emotions_journal_new_entry.view.*
 import pl.nebraszka.selfaid.R
 import pl.nebraszka.selfaid.SelfAIDApplication
 import pl.nebraszka.selfaid.adapters.entry_answers.AnswersAdapter
-import pl.nebraszka.selfaid.emotions_journal.EmotionSectionManager
 import pl.nebraszka.selfaid.entities.Emotion
 import pl.nebraszka.selfaid.tools.ViewVisibilityManager
 import pl.nebraszka.selfaid.view_models.EJSavedEntryViewModel
 import pl.nebraszka.selfaid.view_models.EJSavedEntryViewModelFactory
 
-// TODO: zrobic z tego fragment
-class EJSavedEntry() : AppCompatActivity() {
+class EmotionsJournalSavedEntry : Fragment() {
 
     private val extraEntryId = "EXTRA_ENTRY_ID"
     private val viewModel: EJSavedEntryViewModel by viewModels {
-        EJSavedEntryViewModelFactory((application as SelfAIDApplication).repository)
+        EJSavedEntryViewModelFactory((requireActivity().application as SelfAIDApplication).repository)
     }
+    private lateinit var myView: View
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.emotion_journal_entry)
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
 
-        val entryId = intent.extras!!.getInt(extraEntryId)
+
+        myView = inflater.inflate(R.layout.fragment_emotions_journal_new_entry, container, false)
+
+        val entryId = requireActivity().intent.extras!!.getInt(extraEntryId)
 
         manageButtonsVisibility()
         attachEntryInfo(entryId)
 
-        viewModel.getEntryEmotion(entryId).observe(this, Observer {
+        viewModel.getEntryEmotion(entryId).observe(viewLifecycleOwner, Observer {
             bindEmotionInfo(it, entryId)
         })
+
+        return myView
     }
 
     private fun manageButtonsVisibility() {
@@ -58,7 +69,7 @@ class EJSavedEntry() : AppCompatActivity() {
     }
 
     private fun attachEntryInfo(entryId: Int) {
-        viewModel.getEntryInfo(entryId).observe(this, Observer {
+        viewModel.getEntryInfo(entryId).observe(viewLifecycleOwner, Observer {
             tvEJChosenDate.text = it.date
             tvEJTitle.text = it.title
         })
@@ -67,9 +78,9 @@ class EJSavedEntry() : AppCompatActivity() {
 
     private fun prepareListOfResponds(entryId: Int) {
         val adapter = AnswersAdapter(this, entryId)
-        viewModel.allEJExercise.observe(this) {
+        viewModel.allEJExercise.observe(viewLifecycleOwner) {
             adapter.submitList(it)
-            rvEJTasks.layoutManager = LinearLayoutManager(this)
+            rvEJTasks.layoutManager = LinearLayoutManager(requireContext())
             rvEJTasks.adapter = adapter
         }
     }
@@ -80,9 +91,13 @@ class EJSavedEntry() : AppCompatActivity() {
         tvChosenEmotion.text = emotion.emotion
 
         btnEJEmotionInfo.setOnClickListener {
-            EmotionSectionManager.emotionInfoIntent(this, emotion)
-            startActivity(intent)
+            val bundle = Bundle()
+            bundle.putString("EXTRA_EMOTION_NAME", emotion.emotion)
+            bundle.putString("EXTRA_EMOTION_DESCRIPTION", emotion.description)
+            val fragment = EmotionDescription()
+            fragment.arguments = bundle
+            val transaction = fragment.fragmentManager?.beginTransaction()
+            transaction?.replace(R.id.mainContainerView, fragment)?.commit()
         }
     }
 }
-

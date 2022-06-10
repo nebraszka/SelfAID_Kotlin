@@ -6,12 +6,17 @@ import pl.nebraszka.selfaid.entities.*
 import pl.nebraszka.selfaid.repositories.SelfAIDRepository
 
 class EJSavedEntryViewModel(private val repository: SelfAIDRepository) : ViewModel() {
+    val message = MutableLiveData<Any>()
     val allEmotions: LiveData<List<Emotion>> = repository.allEmotions.asLiveData()
     val allEJExercise: LiveData<List<EJExercise>> = repository.allExercises.asLiveData()
     val allEJEntries: LiveData<List<EJEntry>> = repository.allEntries.asLiveData()
 
     var entryId = MutableLiveData<Long>()
     var pageId = MutableLiveData<Long>()
+
+    fun setMsgCommunicator(msg:String){
+        message.value = msg
+    }
 
     fun getEmotion(name: String): LiveData<Emotion> {
         return repository.getEmotion(name).asLiveData()

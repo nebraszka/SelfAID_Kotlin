@@ -5,21 +5,20 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.asLiveData
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.row_entry.view.*
 import pl.nebraszka.selfaid.R
 import pl.nebraszka.selfaid.SelfAIDDatabase
-import pl.nebraszka.selfaid.emotions_journal.activities.EJSavedEntry
+import pl.nebraszka.selfaid.emotions_journal.fragments.EmotionsJournalMenu
+import pl.nebraszka.selfaid.emotions_journal.fragments.EmotionsJournalSavedEntry
 import pl.nebraszka.selfaid.entities.EJEntry
 import pl.nebraszka.selfaid.tools.date.DateEditor
 
 class EntryViewHolder(itemView: View, private val context: Context) :
     RecyclerView.ViewHolder(itemView) {
-
-    private val database = SelfAIDDatabase.getDatabase(itemView.context)
-    private val entries = database.ejEntryDao().getAllEntries().asLiveData()
 
     companion object {
         fun createViewHolder(parent: ViewGroup): EntryViewHolder {
@@ -30,7 +29,7 @@ class EntryViewHolder(itemView: View, private val context: Context) :
         }
     }
 
-    fun bind(entry: EJEntry, owner: LifecycleOwner, position: Int) {
+    fun bind(entry: EJEntry, position: Int) {
         itemView.id = entry.id
         val reverseDate = DateEditor.reverseDate(entry.date)
 
@@ -56,9 +55,7 @@ class EntryViewHolder(itemView: View, private val context: Context) :
 
     fun setUpClickListener() {
         itemView.btnEntry.setOnClickListener {
-            val intent = Intent(context, EJSavedEntry::class.java)
-            intent.putExtra("EXTRA_ENTRY_ID", itemView.id)
-            context.startActivity(intent)
+            EmotionsJournalMenu().onEntryClicked(itemView.id)
         }
     }
 }
