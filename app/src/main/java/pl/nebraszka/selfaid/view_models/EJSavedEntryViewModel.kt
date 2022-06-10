@@ -11,22 +11,9 @@ class EJSavedEntryViewModel(private val repository: SelfAIDRepository) : ViewMod
     val allEJEntries: LiveData<List<EJEntry>> = repository.allEntries.asLiveData()
 
     var entryId = MutableLiveData<Long>()
-    var pageId = MutableLiveData<Long>()
-
-    fun getEmotion(name: String): LiveData<Emotion> {
-        return repository.getEmotion(name).asLiveData()
-    }
-
-    fun getResponds(entryId: Int, page: Int, exerciseId: Int): LiveData<List<EJAnswer>>{
-        return repository.getResponds(entryId, page, exerciseId).asLiveData()
-    }
 
     fun getEntryInfo(entryId: Int): LiveData<EJEntry>{
         return repository.getEntryInfo(entryId).asLiveData()
-    }
-
-    fun getEmotionInfo(pageId: Int): LiveData<Emotion>{
-        return repository.getEmotionInfo(pageId).asLiveData()
     }
 
     fun getEntryEmotion(entryId: Int): LiveData<Emotion>{

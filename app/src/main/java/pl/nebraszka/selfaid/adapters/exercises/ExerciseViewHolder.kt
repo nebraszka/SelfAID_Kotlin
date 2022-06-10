@@ -12,8 +12,6 @@ import pl.nebraszka.selfaid.exceptions.UnknownExerciseTypeException
 
 class ExerciseViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-    private lateinit var tvTopic: TextView
-
     companion object {
         fun createViewHolder(parent: ViewGroup, viewType: Int): ExerciseViewHolder {
             lateinit var view: View

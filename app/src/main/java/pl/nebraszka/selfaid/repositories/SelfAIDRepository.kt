@@ -8,7 +8,6 @@ import pl.nebraszka.selfaid.entities.*
 class SelfAIDRepository(
     private val emotionDao: EmotionDao,
     private val ejExerciseDao: EJExerciseDao,
-    private val answerSuggestionDao: AnswerSuggestionDao,
     private val ejEntryDao: EJEntryDao,
     private val entryPageDao: EntryPageDao,
     private val ejRespondDao: EJRespondDao

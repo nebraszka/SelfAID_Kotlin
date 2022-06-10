@@ -22,9 +22,6 @@ import pl.nebraszka.selfaid.view_models.EJMenuViewModel
 class EntryViewHolder(itemView: View, private val context: Context) :
     RecyclerView.ViewHolder(itemView) {
 
-    private val database = SelfAIDDatabase.getDatabase(itemView.context)
-    private val entries = database.ejEntryDao().getAllEntries().asLiveData()
-
     companion object {
         fun createViewHolder(parent: ViewGroup): EntryViewHolder {
             val view: View = LayoutInflater.from(parent.context).inflate(
@@ -34,7 +31,7 @@ class EntryViewHolder(itemView: View, private val context: Context) :
         }
     }
 
-    fun bind(entry: EJEntry, owner: LifecycleOwner, position: Int) {
+    fun bind(entry: EJEntry, position: Int) {
         itemView.id = entry.id
         val reverseDate = DateEditor.reverseDate(entry.date)
 
@@ -56,7 +53,7 @@ class EntryViewHolder(itemView: View, private val context: Context) :
         itemView.btnEntry.setBackgroundColor(
             itemView.btnEntry.context.resources.getColor(color)
         );
-        
+
         itemView.btnDeleteEntry.setBackgroundTintList(
             itemView.context.resources.getColorStateList(color)
         )

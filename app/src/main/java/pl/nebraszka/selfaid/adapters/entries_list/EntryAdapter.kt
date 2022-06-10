@@ -16,7 +16,7 @@ class EntryAdapter(private val owner: LifecycleOwner, private val viewModel: EJM
 
     override fun onBindViewHolder(holder: EntryViewHolder, position: Int) {
         val current = getItem(position)
-        holder.bind(current, owner, position)
+        holder.bind(current, position)
         holder.setUpEntryClickListener()
         holder.setUpDeleteClickListener(viewModel)
     }

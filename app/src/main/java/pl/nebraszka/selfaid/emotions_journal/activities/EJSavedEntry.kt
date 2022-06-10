@@ -80,8 +80,11 @@ class EJSavedEntry() : AppCompatActivity() {
         tvChosenEmotion.text = emotion.emotion
 
         btnEJEmotionInfo.setOnClickListener {
-            EmotionSectionManager.emotionInfoIntent(this, emotion)
-            startActivity(intent)
+            startActivity(
+                EmotionSectionManager.emotionInfoIntent(
+                    this, emotion
+                )
+            )
         }
     }
 }
