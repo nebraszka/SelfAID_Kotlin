@@ -6,14 +6,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.LifecycleOwner
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
+import androidx.lifecycle.viewModelScope
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.row_entry.view.*
+import kotlinx.coroutines.coroutineScope
 import pl.nebraszka.selfaid.R
 import pl.nebraszka.selfaid.SelfAIDDatabase
 import pl.nebraszka.selfaid.emotions_journal.activities.EJSavedEntry
 import pl.nebraszka.selfaid.entities.EJEntry
 import pl.nebraszka.selfaid.tools.date.DateEditor
+import pl.nebraszka.selfaid.view_models.EJMenuViewModel
 
 class EntryViewHolder(itemView: View, private val context: Context) :
     RecyclerView.ViewHolder(itemView) {
@@ -52,13 +56,23 @@ class EntryViewHolder(itemView: View, private val context: Context) :
         itemView.btnEntry.setBackgroundColor(
             itemView.btnEntry.context.resources.getColor(color)
         );
+        
+        itemView.btnDeleteEntry.setBackgroundTintList(
+            itemView.context.resources.getColorStateList(color)
+        )
     }
 
-    fun setUpClickListener() {
+    fun setUpEntryClickListener() {
         itemView.btnEntry.setOnClickListener {
             val intent = Intent(context, EJSavedEntry::class.java)
             intent.putExtra("EXTRA_ENTRY_ID", itemView.id)
             context.startActivity(intent)
+        }
+    }
+
+    fun setUpDeleteClickListener(viewModel: EJMenuViewModel){
+        itemView.btnDeleteEntry.setOnClickListener {
+            viewModel.deleteByEntryId(itemView.id)
         }
     }
 }

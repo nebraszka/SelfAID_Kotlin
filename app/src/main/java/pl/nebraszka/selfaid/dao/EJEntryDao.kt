@@ -36,4 +36,7 @@ interface EJEntryDao {
                 "WHERE entries.id=:entryId"
     )
     fun getEntryEmotion(entryId: Int): Flow<Emotion>
+
+    @Query("DELETE FROM TB_EJ_Entries WHERE id = :entryId")
+    suspend fun deleteByEntryId(entryId: Int)
 }

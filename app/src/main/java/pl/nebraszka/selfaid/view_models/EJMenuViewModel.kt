@@ -8,6 +8,11 @@ import pl.nebraszka.selfaid.repositories.SelfAIDRepository
 
 class EJMenuViewModel(private val repository: SelfAIDRepository) : ViewModel() {
     val allEntries = repository.allEntries.asLiveData()
+
+
+    fun deleteByEntryId(entryId: Int) = viewModelScope.launch{
+        repository.deleteByEntryId(entryId)
+    }
 }
 
 class EJMenuViewModelFactory(private val repository: SelfAIDRepository) :

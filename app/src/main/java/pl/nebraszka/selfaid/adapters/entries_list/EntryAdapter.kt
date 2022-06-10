@@ -5,8 +5,9 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import pl.nebraszka.selfaid.entities.EJEntry
+import pl.nebraszka.selfaid.view_models.EJMenuViewModel
 
-class EntryAdapter(private val owner: LifecycleOwner) : ListAdapter<EJEntry, EntryViewHolder>(
+class EntryAdapter(private val owner: LifecycleOwner, private val viewModel: EJMenuViewModel) : ListAdapter<EJEntry, EntryViewHolder>(
     EntryComparator()
 ) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EntryViewHolder {
@@ -16,7 +17,8 @@ class EntryAdapter(private val owner: LifecycleOwner) : ListAdapter<EJEntry, Ent
     override fun onBindViewHolder(holder: EntryViewHolder, position: Int) {
         val current = getItem(position)
         holder.bind(current, owner, position)
-        holder.setUpClickListener()
+        holder.setUpEntryClickListener()
+        holder.setUpDeleteClickListener(viewModel)
     }
 
     class EntryComparator : DiffUtil.ItemCallback<EJEntry>() {

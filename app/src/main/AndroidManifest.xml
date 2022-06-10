@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="pl.nebraszka.selfaid">
+    package="pl.nebraszka.selfaid"
+    android:allowBackup="false">
 
     <application
         android:name=".SelfAIDApplication"

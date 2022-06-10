@@ -16,7 +16,7 @@ import pl.nebraszka.selfaid.entities.*
         EJEntry::class,
         EntryPage::class,
         EJRespond::class
-    ], version = 12, exportSchema = false // TODO: Do zmiany potem
+    ], version = 13, exportSchema = false // TODO: Do zmiany potem
 )
 abstract class SelfAIDDatabase : RoomDatabase() {
     abstract fun emotionDao(): EmotionDao

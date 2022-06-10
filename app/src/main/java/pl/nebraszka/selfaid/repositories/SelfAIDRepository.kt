@@ -26,6 +26,12 @@ class SelfAIDRepository(
 
     @Suppress("RedundantSuspendModifier")
     @WorkerThread
+    suspend fun deleteByEntryId(entryId: Int){
+        return ejEntryDao.deleteByEntryId(entryId)
+    }
+
+    @Suppress("RedundantSuspendModifier")
+    @WorkerThread
     suspend fun insertEntryPage(page: EntryPage): Long {
         return entryPageDao.insertPage(page)
     }
