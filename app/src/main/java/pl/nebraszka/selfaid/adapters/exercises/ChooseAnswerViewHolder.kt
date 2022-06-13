@@ -22,14 +22,14 @@ class ChooseAnswerViewHolder(
             .getAllAnswerSuggestions(exercise.id).asLiveData()
 
         answerSuggestions.observe(owner) {
-            attachAnswers(it, multipleChoice)
+            attachAnswers(it)
         }
     }
 
-    private fun attachAnswers(answerSuggestions: List<AnswerSuggestion>, multipleChoice: Boolean) {
+    private fun attachAnswers(answerSuggestions: List<AnswerSuggestion>) {
         if (multipleChoice) {
             for (answer in answerSuggestions) {
-                val checkBox: CheckBox = CheckBox(view.context)
+                val checkBox = CheckBox(view.context)
                 checkBox.text = answer.answer
                 checkBox.id = answer.id
                 view.llAnswerSuggestions.addView(checkBox)
@@ -39,7 +39,7 @@ class ChooseAnswerViewHolder(
             view.llAnswerSuggestions.addView(radioGroup)
 
             for (answer in answerSuggestions) {
-                val btn: RadioButton = RadioButton(view.context)
+                val btn= RadioButton(view.context)
                 btn.text = answer.answer
                 btn.id = answer.id
                 radioGroup.addView(btn)

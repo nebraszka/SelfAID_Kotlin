@@ -37,12 +37,6 @@ class SelfAIDRepository(
 
     @Suppress("RedundantSuspendModifier")
     @WorkerThread
-    fun getEmotionInfo(pageId: Int): Flow<Emotion> {
-        return entryPageDao.getEmotion(pageId)
-    }
-
-    @Suppress("RedundantSuspendModifier")
-    @WorkerThread
     suspend fun insertEntry(entry: EJEntry): Long {
         return ejEntryDao.insert(entry)
     }
@@ -63,11 +57,5 @@ class SelfAIDRepository(
     @WorkerThread
     suspend fun insertResponds(responds: List<EJRespond>) {
         ejRespondDao.insertAllResponds(responds)
-    }
-
-    @Suppress("RedundantSuspendModifier")
-    @WorkerThread
-    fun getResponds(entryId: Int, page: Int, exerciseId: Int): Flow<List<EJAnswer>> {
-        return ejRespondDao.getRespondsForExercise(entryId, page, exerciseId)
     }
 }

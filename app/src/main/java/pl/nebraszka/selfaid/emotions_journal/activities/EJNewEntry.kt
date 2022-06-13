@@ -2,7 +2,6 @@ package pl.nebraszka.selfaid.emotions_journal.activities
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.doOnTextChanged
@@ -32,7 +31,7 @@ class EJNewEntry : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.emotion_journal_entry)
 
-        manageButtonsVisibility()
+        manageRecordOfEntry()
 
         btnEJDatePicker.setOnClickListener {
             DatePickerHandler.changeTextViewDate(this, tvEJChosenDate)
@@ -48,17 +47,15 @@ class EJNewEntry : AppCompatActivity() {
         }
     }
 
-    private fun manageButtonsVisibility() {
-        val buttons: List<Button> = listOf(btnEJSaveEntry, btnEJAddEmotion)
-
+    private fun manageRecordOfEntry() {
         tvEJChosenDate.doOnTextChanged { _, _, _, _ ->
-            ViewVisibilityManager.manage(buttons, true)
+            ViewVisibilityManager.manage(btnEJSaveEntry, true)
         }
     }
 
     private fun prepareListOfExercises() {
         val adapter = ExerciseAdapter(this)
-        viewModel.allEJExercise.observe(this) {
+        viewModel.allEJExercises.observe(this) {
             adapter.submitList(it)
             rvEJTasks.layoutManager = LinearLayoutManager(this)
             rvEJTasks.adapter = adapter

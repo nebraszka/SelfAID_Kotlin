@@ -1,4 +1,4 @@
-package pl.nebraszka.selfaid.adapters.entry_answers
+package pl.nebraszka.selfaid.adapters.entry_responds
 
 import android.view.LayoutInflater
 import android.view.View

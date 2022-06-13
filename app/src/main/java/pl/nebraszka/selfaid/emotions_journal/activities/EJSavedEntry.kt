@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.emotion_journal_entry.*
 import pl.nebraszka.selfaid.R
 import pl.nebraszka.selfaid.SelfAIDApplication
-import pl.nebraszka.selfaid.adapters.entry_answers.AnswersAdapter
+import pl.nebraszka.selfaid.adapters.entry_responds.AnswersAdapter
 import pl.nebraszka.selfaid.emotions_journal.EmotionSectionManager
 import pl.nebraszka.selfaid.entities.Emotion
 import pl.nebraszka.selfaid.tools.ViewVisibilityManager
@@ -67,7 +67,7 @@ class EJSavedEntry() : AppCompatActivity() {
 
     private fun prepareListOfResponds(entryId: Int) {
         val adapter = AnswersAdapter(this, entryId)
-        viewModel.allEJExercise.observe(this) {
+        viewModel.allEJExercises.observe(this) {
             adapter.submitList(it)
             rvEJTasks.layoutManager = LinearLayoutManager(this)
             rvEJTasks.adapter = adapter

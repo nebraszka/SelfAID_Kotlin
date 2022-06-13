@@ -9,7 +9,7 @@ import pl.nebraszka.selfaid.repositories.SelfAIDRepository
 class EJEntryViewModel(private val repository: SelfAIDRepository) : ViewModel() {
     var chosenEmotion: Emotion? = null
     val allEmotions: LiveData<List<Emotion>> = repository.allEmotions.asLiveData()
-    val allEJExercise: LiveData<List<EJExercise>> = repository.allExercises.asLiveData()
+    val allEJExercises: LiveData<List<EJExercise>> = repository.allExercises.asLiveData()
 
     var entryId = MutableLiveData<Long>()
     var pageId = MutableLiveData<Long>()
