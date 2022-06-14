@@ -43,18 +43,18 @@ class AnswersViewHolder(itemView: View, private val entryId: Int) :
                         } else {
                             it[0].text_answer!!
                         }
-                    };
+                    }
 
                     ExerciseType.VIEW_TODO_TASK.id -> {
                         if (it.isNotEmpty())
                            resources.getString(R.string.Checked)
                         else
                            resources.getString(R.string.Unchecked)
-                    };
+                    }
 
                     ExerciseType.VIEW_SCALE_QUESTION.id -> {
                         it[0].text_answer!! + " / " + itemView.context.resources.getInteger(R.integer.EJ_Entry_Max_Scale_Value)
-                    };
+                    }
 
                     ExerciseType.VIEW_CHOOSE_OPTION.id -> {
                         if (it.isEmpty()) {
@@ -62,7 +62,7 @@ class AnswersViewHolder(itemView: View, private val entryId: Int) :
                         } else {
                             it[0].answer
                         }
-                    };
+                    }
 
                     ExerciseType.VIEW_MULTICHOOSE_OPTION.id -> {
                         if (it.isNotEmpty()) {
@@ -75,7 +75,7 @@ class AnswersViewHolder(itemView: View, private val entryId: Int) :
                         } else {
                             resources.getString(R.string.None_Checked)
                         }
-                    };
+                    }
                     else -> {resources.getString(R.string.No_Respond)}
                 }
         }

@@ -31,17 +31,17 @@ class ExerciseViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     fun bind(exercise: EJExercise, owner: LifecycleOwner) {
         when (exercise.exerciseType) {
             ExerciseType.VIEW_TODO_TASK.id ->
-                TaskViewHolder(itemView, owner, exercise).bind();
+                TaskViewHolder(itemView, owner, exercise).bind()
             ExerciseType.VIEW_QUESTION.id ->
-                QuestionViewHolder(itemView, owner, exercise).bind();
+                QuestionViewHolder(itemView, owner, exercise).bind()
             ExerciseType.VIEW_SCALE_QUESTION.id ->
-                ScaleQuestionViewHolder(itemView, owner, exercise).bind();
+                ScaleQuestionViewHolder(itemView, owner, exercise).bind()
             ExerciseType.VIEW_CHOOSE_OPTION.id ->
-                ChooseAnswerViewHolder(itemView, owner, exercise, false).bind();
+                ChooseAnswerViewHolder(itemView, owner, exercise, false).bind()
             ExerciseType.VIEW_MULTICHOOSE_OPTION.id ->
-                ChooseAnswerViewHolder(itemView, owner, exercise, true).bind();
+                ChooseAnswerViewHolder(itemView, owner, exercise, true).bind()
             else ->
-                throw Exception("todo: twoj wyjatek");
+                throw Exception("todo: twoj wyjatek")
             // TODO : wyjątek
         }
     }

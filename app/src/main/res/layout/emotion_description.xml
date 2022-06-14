@@ -28,7 +28,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvEmotionName"
-        app:layout_constraintVertical_bias="0.05">
+        app:layout_constraintVertical_bias="0.2">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -40,9 +40,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/ubuntu_medium"
+                android:fontFamily="@font/ubuntu_medium_italic"
                 android:text="@string/EJ_Emotion_Descripiton_Describtion"
-                android:textSize="15sp"
+                android:textSize="18sp"
+                android:layout_marginHorizontal="25dp"
+                android:gravity="center"
 
                 />
         </LinearLayout>

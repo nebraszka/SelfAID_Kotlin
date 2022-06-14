@@ -31,7 +31,7 @@ class RespondsHandler {
                             responds += EJRespond(
                                 child.id, pageId.toInt(), null, answer
                             )
-                    };
+                    }
 
                     ExerciseType.VIEW_CHOOSE_OPTION -> {
                         val chosenAnswer = getChosenAnswer(child.llAnswerSuggestions)
@@ -41,7 +41,7 @@ class RespondsHandler {
                             responds += EJRespond(
                                 child.id, pageId.toInt(), chosenAnswer, null
                             )
-                    };
+                    }
 
                     ExerciseType.VIEW_MULTICHOOSE_OPTION -> {
                         val checkedBoxes = getCheckedBoxes(child.llAnswerSuggestions)
@@ -54,14 +54,14 @@ class RespondsHandler {
                                 )
                             }
                         }
-                    };
+                    }
 
                     ExerciseType.VIEW_SCALE_QUESTION -> {
                         val answer = child.scaleQuestionRow.progress
                         responds += EJRespond(
                             child.id, pageId.toInt(), null, answer.toString()
                         )
-                    };
+                    }
 
                     ExerciseType.VIEW_TODO_TASK -> {
                         val isDone = child.checkBoxTaskRow.isChecked
@@ -70,9 +70,9 @@ class RespondsHandler {
                                 child.id, pageId.toInt(), null, isDone.toString()
                             )
                         }
-                    };
+                    }
                     else ->
-                        continue;
+                        continue
                 }
             }
             return responds

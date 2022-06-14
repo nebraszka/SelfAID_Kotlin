@@ -8,6 +8,7 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.emotion_journal_menu.*
 import kotlinx.android.synthetic.main.row_entry.view.*
+import pl.nebraszka.selfaid.MainActivity
 import pl.nebraszka.selfaid.R
 import pl.nebraszka.selfaid.SelfAIDApplication
 import pl.nebraszka.selfaid.adapters.entries_list.EntryAdapter
@@ -31,6 +32,11 @@ class EJMenu : AppCompatActivity() {
             val intent = Intent(this, EJNewEntry::class.java)
             startActivity(intent)
         }
+    }
+
+    override fun onBackPressed() {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
     }
 
     private fun prepareListOfEntries() {
@@ -58,7 +64,7 @@ class EJMenu : AppCompatActivity() {
         }
     }
 
-    private fun showMenuWithoutEntries(){
+    private fun showMenuWithoutEntries() {
         ViewVisibilityManager.manage(btnEJFirstEntry, true)
         ViewVisibilityManager.manage(btnEJNewEntry, false)
         ViewVisibilityManager.manage(rvEntriesList, false)

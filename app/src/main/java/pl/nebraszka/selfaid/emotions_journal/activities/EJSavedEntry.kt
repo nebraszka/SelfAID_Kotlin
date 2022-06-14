@@ -1,5 +1,6 @@
 package pl.nebraszka.selfaid.emotions_journal.activities
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -15,8 +16,7 @@ import pl.nebraszka.selfaid.tools.ViewVisibilityManager
 import pl.nebraszka.selfaid.view_models.EJSavedEntryViewModel
 import pl.nebraszka.selfaid.view_models.EJSavedEntryViewModelFactory
 
-// TODO: zrobic z tego fragment
-class EJSavedEntry() : AppCompatActivity() {
+class EJSavedEntry : AppCompatActivity() {
 
     private val extraEntryId = "EXTRA_ENTRY_ID"
     private val viewModel: EJSavedEntryViewModel by viewModels {
@@ -35,6 +35,11 @@ class EJSavedEntry() : AppCompatActivity() {
         viewModel.getEntryEmotion(entryId).observe(this, Observer {
             bindEmotionInfo(it, entryId)
         })
+    }
+
+    override fun onBackPressed() {
+        val intent = Intent(this, EJMenu::class.java)
+        startActivity(intent)
     }
 
     private fun manageButtonsVisibility() {

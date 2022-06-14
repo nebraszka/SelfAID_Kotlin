@@ -47,6 +47,11 @@ class EJNewEntry : AppCompatActivity() {
         }
     }
 
+    override fun onBackPressed() {
+        val intent = Intent(this, EJMenu::class.java)
+        startActivity(intent)
+    }
+
     private fun manageRecordOfEntry() {
         tvEJChosenDate.doOnTextChanged { _, _, _, _ ->
             ViewVisibilityManager.manage(btnEJSaveEntry, true)
@@ -85,7 +90,7 @@ class EJNewEntry : AppCompatActivity() {
         viewModel.addEntry(
             EJEntry(
                 DateEditor.reverseDate(date),
-                title ?: this.resources.getString(R.string.Blank_Topic)
+                title
             )
         )
 

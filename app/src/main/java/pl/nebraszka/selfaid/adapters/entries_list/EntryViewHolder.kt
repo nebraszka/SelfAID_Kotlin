@@ -52,11 +52,9 @@ class EntryViewHolder(itemView: View, private val context: Context) :
 
         itemView.btnEntry.setBackgroundColor(
             itemView.btnEntry.context.resources.getColor(color)
-        );
-
-        itemView.btnDeleteEntry.setBackgroundTintList(
-            itemView.context.resources.getColorStateList(color)
         )
+
+        itemView.btnDeleteEntry.backgroundTintList = itemView.context.resources.getColorStateList(color)
     }
 
     fun setUpEntryClickListener() {
