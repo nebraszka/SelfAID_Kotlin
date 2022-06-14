@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="EJ_Entry_Min_Scale_Value">0</integer>
+    <integer name="EJ_Entry_Max_Scale_Value">5</integer>
+</resources>
