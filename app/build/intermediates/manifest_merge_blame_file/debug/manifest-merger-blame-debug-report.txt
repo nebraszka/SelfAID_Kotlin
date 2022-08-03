@@ -1,0 +1,120 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="pl.nebraszka.selfaid"
+4    android:allowBackup="false"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="21"
+9-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml
+10        android:targetSdkVersion="32" />
+10-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml
+11
+12    <application
+12-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:6:5-38:19
+13        android:name="pl.nebraszka.selfaid.SelfAIDApplication"
+13-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:7:9-43
+14        android:allowBackup="true"
+14-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:8:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.7.0] /home/nebraszka/.gradle/caches/transforms-3/d712bc876a373ea5768e2e78ec7db3e9/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:9:9-43
+18        android:label="@string/app_name"
+18-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:10:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:11:9-54
+20        android:supportsRtl="true"
+20-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:12:9-35
+21        android:theme="@style/Theme.SelfAID" >
+21-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:13:9-45
+22        <activity
+22-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:14:9-16:40
+23            android:name="pl.nebraszka.selfaid.emotions_journal.activities.EJMenu"
+23-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:15:13-83
+24            android:exported="false" />
+24-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:16:13-37
+25        <activity
+25-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:18:9-19:39
+26            android:name="pl.nebraszka.selfaid.emotions_journal.activities.EJEmotionDescription"
+26-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:18:19-103
+27            android:exported="false" />
+27-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:19:13-37
+28        <activity
+28-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:21:9-23:40
+29            android:name="pl.nebraszka.selfaid.emotions_journal.activities.EJNewEntry"
+29-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:22:13-87
+30            android:exported="false" />
+30-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:23:13-37
+31        <activity
+31-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:25:9-27:39
+32            android:name="pl.nebraszka.selfaid.emotions_journal.activities.EJSavedEntry"
+32-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:26:13-89
+33            android:exported="false" />
+33-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:27:13-37
+34        <activity
+34-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:29:9-37:20
+35            android:name="pl.nebraszka.selfaid.MainActivity"
+35-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:30:13-41
+36            android:exported="true" >
+36-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:31:13-36
+37            <intent-filter>
+37-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:32:13-36:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:33:17-69
+38-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:33:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:35:17-77
+40-->/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:35:27-74
+41            </intent-filter>
+42        </activity>
+43
+44        <uses-library
+44-->[androidx.window:window:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/6f357f16dc6c08a55848a4b68cb11105/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+45            android:name="androidx.window.extensions"
+45-->[androidx.window:window:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/6f357f16dc6c08a55848a4b68cb11105/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+46            android:required="false" />
+46-->[androidx.window:window:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/6f357f16dc6c08a55848a4b68cb11105/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+47        <uses-library
+47-->[androidx.window:window:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/6f357f16dc6c08a55848a4b68cb11105/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+48            android:name="androidx.window.sidecar"
+48-->[androidx.window:window:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/6f357f16dc6c08a55848a4b68cb11105/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+49            android:required="false" />
+49-->[androidx.window:window:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/6f357f16dc6c08a55848a4b68cb11105/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+50
+51        <provider
+51-->[androidx.emoji2:emoji2:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/babdb6fcc324e3e1f36c7212d5548a76/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+52            android:name="androidx.startup.InitializationProvider"
+52-->[androidx.emoji2:emoji2:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/babdb6fcc324e3e1f36c7212d5548a76/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
+53            android:authorities="pl.nebraszka.selfaid.androidx-startup"
+53-->[androidx.emoji2:emoji2:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/babdb6fcc324e3e1f36c7212d5548a76/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
+54            android:exported="false" >
+54-->[androidx.emoji2:emoji2:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/babdb6fcc324e3e1f36c7212d5548a76/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
+55            <meta-data
+55-->[androidx.emoji2:emoji2:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/babdb6fcc324e3e1f36c7212d5548a76/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+56                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+56-->[androidx.emoji2:emoji2:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/babdb6fcc324e3e1f36c7212d5548a76/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
+57                android:value="androidx.startup" />
+57-->[androidx.emoji2:emoji2:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/babdb6fcc324e3e1f36c7212d5548a76/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
+58            <meta-data
+58-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/nebraszka/.gradle/caches/transforms-3/d29a7dd3b98966357581fe1ebf597962/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+59                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+59-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/nebraszka/.gradle/caches/transforms-3/d29a7dd3b98966357581fe1ebf597962/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+60                android:value="androidx.startup" />
+60-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/nebraszka/.gradle/caches/transforms-3/d29a7dd3b98966357581fe1ebf597962/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+61        </provider>
+62
+63        <service
+63-->[androidx.room:room-runtime:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/178825a51c8e88f0293ec38ee110cf64/transformed/room-runtime-2.4.2/AndroidManifest.xml:25:9-28:40
+64            android:name="androidx.room.MultiInstanceInvalidationService"
+64-->[androidx.room:room-runtime:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/178825a51c8e88f0293ec38ee110cf64/transformed/room-runtime-2.4.2/AndroidManifest.xml:26:13-74
+65            android:directBootAware="true"
+65-->[androidx.room:room-runtime:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/178825a51c8e88f0293ec38ee110cf64/transformed/room-runtime-2.4.2/AndroidManifest.xml:27:13-43
+66            android:exported="false" />
+66-->[androidx.room:room-runtime:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/178825a51c8e88f0293ec38ee110cf64/transformed/room-runtime-2.4.2/AndroidManifest.xml:28:13-37
+67    </application>
+68
+69</manifest>

@@ -1,0 +1,68 @@
+# 2022-06-09T22:12:32.625Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 1
+}
+test_status: PASSED
+test_result {
+  test_case {
+    test_class: "ExampleInstrumentedTest"
+    test_package: "pl.nebraszka.selfaid"
+    test_method: "useAppContext"
+    start_time {
+      seconds: 1654812751
+      nanos: 957000000
+    }
+    end_time {
+      seconds: 1654812751
+      nanos: 981000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/nebraszka/SelfAIDRepo/Self_AID/app/build/outputs/androidTest-results/connected/Pixel_API_30(AVD) - 11/logcat-pl.nebraszka.selfaid.ExampleInstrumentedTest-useAppContext.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/nebraszka/SelfAIDRepo/Self_AID/app/build/outputs/androidTest-results/connected/Pixel_API_30(AVD) - 11/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/nebraszka/SelfAIDRepo/Self_AID/app/build/outputs/androidTest-results/connected/Pixel_API_30(AVD) - 11/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/nebraszka/SelfAIDRepo/Self_AID/app/build/outputs/androidTest-results/connected/Pixel_API_30(AVD) - 11/cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "/home/nebraszka/SelfAIDRepo/Self_AID/app/build/outputs/androidTest-results/connected/Pixel_API_30(AVD) - 11/testlog/test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}

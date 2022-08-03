@@ -1,0 +1,362 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:2:1-40:12
+MERGED from [androidx.room:room-ktx:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/f95f62f1833d8aa7b5dc9d711738db94/transformed/room-ktx-2.4.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/0311825d184851b43ec1b1b919ea4291/transformed/navigation-fragment-ktx-2.4.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/f371fe7824e9fc6231b4bfd9cba77b0d/transformed/navigation-fragment-2.4.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment-ktx:1.4.1] /home/nebraszka/.gradle/caches/transforms-3/8a7eb7a37f1e5e46d1ab4cb128f8032f/transformed/fragment-ktx-1.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui-ktx:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/466c456eff3a4152f53d1cff89d318ec/transformed/navigation-ui-ktx-2.4.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/836163e7e6b319cfb12a9a978e895a02/transformed/navigation-runtime-ktx-2.4.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/be3816512010f15b8f31aae78d622f1f/transformed/navigation-ui-2.4.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/d758beeac0abac7e60e92fd511904848/transformed/navigation-runtime-2.4.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.4.0] /home/nebraszka/.gradle/caches/transforms-3/71a8c9d550180b18e8690fff97bc5d5c/transformed/activity-ktx-1.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/e3057f15706268bcabb7f4c6ed663f02/transformed/navigation-common-ktx-2.4.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/57993d08a6b9e84083fd2a529a2c24c6/transformed/navigation-common-2.4.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1] /home/nebraszka/.gradle/caches/transforms-3/b4b4ca0395d273d764632dc71e01fce8/transformed/lifecycle-viewmodel-ktx-2.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.1] /home/nebraszka/.gradle/caches/transforms-3/cc6bd718cba7c225dca22aceb3a0aea6/transformed/lifecycle-runtime-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/de4fa628ad0c5e8969ece444088490c7/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/8cebe08b4bb12bc934ab581a3c05a8b1/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /home/nebraszka/.gradle/caches/transforms-3/c6c2747374150bb11ca5fc6f1282a4f5/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.window:window:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/6f357f16dc6c08a55848a4b68cb11105/transformed/window-1.0.0/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.4.1] /home/nebraszka/.gradle/caches/transforms-3/4cd4ca9226f820f192dc188682b78fba/transformed/lifecycle-livedata-ktx-2.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:viewbinding:7.1.1] /home/nebraszka/.gradle/caches/transforms-3/83dd201f11260523d0b86ede552a4d3b/transformed/viewbinding-7.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.6.0] /home/nebraszka/.gradle/caches/transforms-3/6a0d75b26ac579089c01b38c1d6a5be6/transformed/material-1.6.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] /home/nebraszka/.gradle/caches/transforms-3/e5fe0484e64e50ba6f2c04f36e9e3b5a/transformed/constraintlayout-2.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.4.1] /home/nebraszka/.gradle/caches/transforms-3/e6a1a2a2f0afc3c5078aeee3df2c8b14/transformed/appcompat-1.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/87483d73ca109561c569c51adddcc356/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.4.1] /home/nebraszka/.gradle/caches/transforms-3/6414ffdee434a796763a461ce7902af8/transformed/fragment-1.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.7.0] /home/nebraszka/.gradle/caches/transforms-3/1931daf6feef5927aad50e008d7f97f6/transformed/core-ktx-1.7.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.activity:activity:1.4.0] /home/nebraszka/.gradle/caches/transforms-3/853b850c7bc9ba4e6c3506d120e05bd0/transformed/activity-1.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] /home/nebraszka/.gradle/caches/transforms-3/7650eb37e0d04e05c760661d82b4ab17/transformed/savedstate-ktx-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /home/nebraszka/.gradle/caches/transforms-3/b131d00e203b1006bb15a97ad01cb0e1/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] /home/nebraszka/.gradle/caches/transforms-3/ff55b4e7d9ac8c3641425634bc539e3d/transformed/savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/93605a4a03c3c52bb1e65a71b8c6c176/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/a9d2b218e5cd301957af77027b38ff5c/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/a552df52a65973b22b3bc66839ed3c13/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.4.1] /home/nebraszka/.gradle/caches/transforms-3/47698ea7806c3eea9bf9334c703af174/transformed/lifecycle-livedata-2.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.4.1] /home/nebraszka/.gradle/caches/transforms-3/d2edf685892f535795f2a69d33f107a9/transformed/lifecycle-livedata-core-ktx-2.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.4.1] /home/nebraszka/.gradle/caches/transforms-3/1c1de36b4f2580ecbda6a9e0ef006032/transformed/lifecycle-livedata-core-2.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /home/nebraszka/.gradle/caches/transforms-3/c40ba6de7e0135eea313e0514d5b71f8/transformed/appcompat-resources-1.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/998657fcb30227e050413717dbf745cb/transformed/emoji2-views-helper-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/babdb6fcc324e3e1f36c7212d5548a76/transformed/emoji2-1.0.0/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.media:media:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/9f74a4d181ed5831948d3eb992ddcbe2/transformed/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/nebraszka/.gradle/caches/transforms-3/b4dc88286437aff3256a4c3f98e1a75f/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/nebraszka/.gradle/caches/transforms-3/3a52317f58a0799de3cc978112bf02b1/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/nebraszka/.gradle/caches/transforms-3/9493720e179538de1914c65ba8adb33e/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/nebraszka/.gradle/caches/transforms-3/9ea39d6fce9f1afccb556f989af6cf25/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/dc39300746797acf644afc0d3746e5ef/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/nebraszka/.gradle/caches/transforms-3/ae1bb32400f6b5b0623bb1e055965946/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.1.0] /home/nebraszka/.gradle/caches/transforms-3/82f5ada918169638bb7cb6f093aa2496/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/034aa418a53fac5c3b475edb5ff40558/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/b499dfb8bf438acc3df6c45f4e03a886/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.4.1] /home/nebraszka/.gradle/caches/transforms-3/275fce532c89025ea7460b6c82a1e8d9/transformed/transition-1.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.7.0] /home/nebraszka/.gradle/caches/transforms-3/d712bc876a373ea5768e2e78ec7db3e9/transformed/core-1.7.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/nebraszka/.gradle/caches/transforms-3/d29a7dd3b98966357581fe1ebf597962/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /home/nebraszka/.gradle/caches/transforms-3/740d4b466898a2449d408c16e4b35b2a/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/c1181172a7115d714fd4cd8833c4afb5/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/597a2ea66c74458ae91fc3fc52ae736c/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.room:room-runtime:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/178825a51c8e88f0293ec38ee110cf64/transformed/room-runtime-2.4.2/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.4.1] /home/nebraszka/.gradle/caches/transforms-3/21944db30df51e6c3b568a9f1ff0ed5a/transformed/lifecycle-viewmodel-2.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/nebraszka/.gradle/caches/transforms-3/f605358d098b92c2e842d9d0f0c930d5/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.startup:startup-runtime:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/78c2b5d42c3cae4f47d43682416db986/transformed/startup-runtime-1.0.0/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/nebraszka/.gradle/caches/transforms-3/a9a0cde54e70dfc59dbe59250528c114/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/38efaa38d198e1444ba45857a2ff2232/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/ab19c9c91be0e0e40f13387b7c77fc6d/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/8be9273d24b79cd555b857746810eac0/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/6eb3686db4d5eef8c73e4a3adcebb7c2/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.tracing:tracing:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/e9f10af39c41319aa90864fdb465e2cd/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite-framework:2.2.0] /home/nebraszka/.gradle/caches/transforms-3/a711d35664659b90809d3b9b722278f5/transformed/sqlite-framework-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite:2.2.0] /home/nebraszka/.gradle/caches/transforms-3/b783661f37e359d6376e5472e69d1dc7/transformed/sqlite-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/nebraszka/.gradle/caches/transforms-3/1d4338d7a67f8c8bee441a5d03d4f7c7/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:2:1-40:12
+	package
+		ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:3:5-35
+		INJECTED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml
+		INJECTED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml
+		ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:2:1-40:12
+		INJECTED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml
+		ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:2:1-40:12
+		INJECTED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:2:11-69
+	android:allowBackup
+		ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:4:5-32
+application
+ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:6:5-38:19
+MERGED from [androidx.window:window:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/6f357f16dc6c08a55848a4b68cb11105/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/6f357f16dc6c08a55848a4b68cb11105/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
+MERGED from [com.google.android.material:material:1.6.0] /home/nebraszka/.gradle/caches/transforms-3/6a0d75b26ac579089c01b38c1d6a5be6/transformed/material-1.6.0/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.material:material:1.6.0] /home/nebraszka/.gradle/caches/transforms-3/6a0d75b26ac579089c01b38c1d6a5be6/transformed/material-1.6.0/AndroidManifest.xml:24:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] /home/nebraszka/.gradle/caches/transforms-3/e5fe0484e64e50ba6f2c04f36e9e3b5a/transformed/constraintlayout-2.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] /home/nebraszka/.gradle/caches/transforms-3/e5fe0484e64e50ba6f2c04f36e9e3b5a/transformed/constraintlayout-2.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.emoji2:emoji2:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/babdb6fcc324e3e1f36c7212d5548a76/transformed/emoji2-1.0.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.emoji2:emoji2:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/babdb6fcc324e3e1f36c7212d5548a76/transformed/emoji2-1.0.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.core:core:1.7.0] /home/nebraszka/.gradle/caches/transforms-3/d712bc876a373ea5768e2e78ec7db3e9/transformed/core-1.7.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.7.0] /home/nebraszka/.gradle/caches/transforms-3/d712bc876a373ea5768e2e78ec7db3e9/transformed/core-1.7.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/nebraszka/.gradle/caches/transforms-3/d29a7dd3b98966357581fe1ebf597962/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/nebraszka/.gradle/caches/transforms-3/d29a7dd3b98966357581fe1ebf597962/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.room:room-runtime:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/178825a51c8e88f0293ec38ee110cf64/transformed/room-runtime-2.4.2/AndroidManifest.xml:24:5-29:19
+MERGED from [androidx.room:room-runtime:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/178825a51c8e88f0293ec38ee110cf64/transformed/room-runtime-2.4.2/AndroidManifest.xml:24:5-29:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/nebraszka/.gradle/caches/transforms-3/f605358d098b92c2e842d9d0f0c930d5/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/nebraszka/.gradle/caches/transforms-3/f605358d098b92c2e842d9d0f0c930d5/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/78c2b5d42c3cae4f47d43682416db986/transformed/startup-runtime-1.0.0/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/78c2b5d42c3cae4f47d43682416db986/transformed/startup-runtime-1.0.0/AndroidManifest.xml:25:5-31:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.7.0] /home/nebraszka/.gradle/caches/transforms-3/d712bc876a373ea5768e2e78ec7db3e9/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:10:9-41
+	android:roundIcon
+		ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:11:9-54
+	android:icon
+		ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:8:9-35
+	android:theme
+		ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:13:9-45
+	android:name
+		ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:7:9-43
+activity#pl.nebraszka.selfaid.emotions_journal.activities.EJMenu
+ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:14:9-16:40
+	android:exported
+		ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:16:13-37
+	android:name
+		ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:15:13-83
+activity#pl.nebraszka.selfaid.emotions_journal.activities.EJEmotionDescription
+ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:18:9-19:39
+	android:exported
+		ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:19:13-37
+	android:name
+		ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:18:19-103
+activity#pl.nebraszka.selfaid.emotions_journal.activities.EJNewEntry
+ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:21:9-23:40
+	android:exported
+		ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:23:13-37
+	android:name
+		ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:22:13-87
+activity#pl.nebraszka.selfaid.emotions_journal.activities.EJSavedEntry
+ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:25:9-27:39
+	android:exported
+		ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:26:13-89
+activity#pl.nebraszka.selfaid.MainActivity
+ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:29:9-37:20
+	android:exported
+		ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:31:13-36
+	android:name
+		ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:30:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:32:13-36:29
+action#android.intent.action.MAIN
+ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:33:17-69
+	android:name
+		ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:33:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:35:17-77
+	android:name
+		ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml:35:27-74
+uses-sdk
+INJECTED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml
+INJECTED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml
+MERGED from [androidx.room:room-ktx:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/f95f62f1833d8aa7b5dc9d711738db94/transformed/room-ktx-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-ktx:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/f95f62f1833d8aa7b5dc9d711738db94/transformed/room-ktx-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/0311825d184851b43ec1b1b919ea4291/transformed/navigation-fragment-ktx-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/0311825d184851b43ec1b1b919ea4291/transformed/navigation-fragment-ktx-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/f371fe7824e9fc6231b4bfd9cba77b0d/transformed/navigation-fragment-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/f371fe7824e9fc6231b4bfd9cba77b0d/transformed/navigation-fragment-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.4.1] /home/nebraszka/.gradle/caches/transforms-3/8a7eb7a37f1e5e46d1ab4cb128f8032f/transformed/fragment-ktx-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.4.1] /home/nebraszka/.gradle/caches/transforms-3/8a7eb7a37f1e5e46d1ab4cb128f8032f/transformed/fragment-ktx-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/466c456eff3a4152f53d1cff89d318ec/transformed/navigation-ui-ktx-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/466c456eff3a4152f53d1cff89d318ec/transformed/navigation-ui-ktx-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/836163e7e6b319cfb12a9a978e895a02/transformed/navigation-runtime-ktx-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/836163e7e6b319cfb12a9a978e895a02/transformed/navigation-runtime-ktx-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/be3816512010f15b8f31aae78d622f1f/transformed/navigation-ui-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/be3816512010f15b8f31aae78d622f1f/transformed/navigation-ui-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/d758beeac0abac7e60e92fd511904848/transformed/navigation-runtime-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/d758beeac0abac7e60e92fd511904848/transformed/navigation-runtime-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.4.0] /home/nebraszka/.gradle/caches/transforms-3/71a8c9d550180b18e8690fff97bc5d5c/transformed/activity-ktx-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.4.0] /home/nebraszka/.gradle/caches/transforms-3/71a8c9d550180b18e8690fff97bc5d5c/transformed/activity-ktx-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/e3057f15706268bcabb7f4c6ed663f02/transformed/navigation-common-ktx-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/e3057f15706268bcabb7f4c6ed663f02/transformed/navigation-common-ktx-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/57993d08a6b9e84083fd2a529a2c24c6/transformed/navigation-common-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/57993d08a6b9e84083fd2a529a2c24c6/transformed/navigation-common-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1] /home/nebraszka/.gradle/caches/transforms-3/b4b4ca0395d273d764632dc71e01fce8/transformed/lifecycle-viewmodel-ktx-2.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1] /home/nebraszka/.gradle/caches/transforms-3/b4b4ca0395d273d764632dc71e01fce8/transformed/lifecycle-viewmodel-ktx-2.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.1] /home/nebraszka/.gradle/caches/transforms-3/cc6bd718cba7c225dca22aceb3a0aea6/transformed/lifecycle-runtime-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.1] /home/nebraszka/.gradle/caches/transforms-3/cc6bd718cba7c225dca22aceb3a0aea6/transformed/lifecycle-runtime-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/de4fa628ad0c5e8969ece444088490c7/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/de4fa628ad0c5e8969ece444088490c7/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/8cebe08b4bb12bc934ab581a3c05a8b1/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/8cebe08b4bb12bc934ab581a3c05a8b1/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /home/nebraszka/.gradle/caches/transforms-3/c6c2747374150bb11ca5fc6f1282a4f5/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /home/nebraszka/.gradle/caches/transforms-3/c6c2747374150bb11ca5fc6f1282a4f5/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/6f357f16dc6c08a55848a4b68cb11105/transformed/window-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/6f357f16dc6c08a55848a4b68cb11105/transformed/window-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.4.1] /home/nebraszka/.gradle/caches/transforms-3/4cd4ca9226f820f192dc188682b78fba/transformed/lifecycle-livedata-ktx-2.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.4.1] /home/nebraszka/.gradle/caches/transforms-3/4cd4ca9226f820f192dc188682b78fba/transformed/lifecycle-livedata-ktx-2.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:viewbinding:7.1.1] /home/nebraszka/.gradle/caches/transforms-3/83dd201f11260523d0b86ede552a4d3b/transformed/viewbinding-7.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:viewbinding:7.1.1] /home/nebraszka/.gradle/caches/transforms-3/83dd201f11260523d0b86ede552a4d3b/transformed/viewbinding-7.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.6.0] /home/nebraszka/.gradle/caches/transforms-3/6a0d75b26ac579089c01b38c1d6a5be6/transformed/material-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.6.0] /home/nebraszka/.gradle/caches/transforms-3/6a0d75b26ac579089c01b38c1d6a5be6/transformed/material-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] /home/nebraszka/.gradle/caches/transforms-3/e5fe0484e64e50ba6f2c04f36e9e3b5a/transformed/constraintlayout-2.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] /home/nebraszka/.gradle/caches/transforms-3/e5fe0484e64e50ba6f2c04f36e9e3b5a/transformed/constraintlayout-2.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.4.1] /home/nebraszka/.gradle/caches/transforms-3/e6a1a2a2f0afc3c5078aeee3df2c8b14/transformed/appcompat-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.4.1] /home/nebraszka/.gradle/caches/transforms-3/e6a1a2a2f0afc3c5078aeee3df2c8b14/transformed/appcompat-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/87483d73ca109561c569c51adddcc356/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/87483d73ca109561c569c51adddcc356/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.4.1] /home/nebraszka/.gradle/caches/transforms-3/6414ffdee434a796763a461ce7902af8/transformed/fragment-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.4.1] /home/nebraszka/.gradle/caches/transforms-3/6414ffdee434a796763a461ce7902af8/transformed/fragment-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.7.0] /home/nebraszka/.gradle/caches/transforms-3/1931daf6feef5927aad50e008d7f97f6/transformed/core-ktx-1.7.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.7.0] /home/nebraszka/.gradle/caches/transforms-3/1931daf6feef5927aad50e008d7f97f6/transformed/core-ktx-1.7.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.activity:activity:1.4.0] /home/nebraszka/.gradle/caches/transforms-3/853b850c7bc9ba4e6c3506d120e05bd0/transformed/activity-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.4.0] /home/nebraszka/.gradle/caches/transforms-3/853b850c7bc9ba4e6c3506d120e05bd0/transformed/activity-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] /home/nebraszka/.gradle/caches/transforms-3/7650eb37e0d04e05c760661d82b4ab17/transformed/savedstate-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] /home/nebraszka/.gradle/caches/transforms-3/7650eb37e0d04e05c760661d82b4ab17/transformed/savedstate-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /home/nebraszka/.gradle/caches/transforms-3/b131d00e203b1006bb15a97ad01cb0e1/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /home/nebraszka/.gradle/caches/transforms-3/b131d00e203b1006bb15a97ad01cb0e1/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /home/nebraszka/.gradle/caches/transforms-3/ff55b4e7d9ac8c3641425634bc539e3d/transformed/savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /home/nebraszka/.gradle/caches/transforms-3/ff55b4e7d9ac8c3641425634bc539e3d/transformed/savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/93605a4a03c3c52bb1e65a71b8c6c176/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/93605a4a03c3c52bb1e65a71b8c6c176/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/a9d2b218e5cd301957af77027b38ff5c/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/a9d2b218e5cd301957af77027b38ff5c/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/a552df52a65973b22b3bc66839ed3c13/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/a552df52a65973b22b3bc66839ed3c13/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.4.1] /home/nebraszka/.gradle/caches/transforms-3/47698ea7806c3eea9bf9334c703af174/transformed/lifecycle-livedata-2.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.4.1] /home/nebraszka/.gradle/caches/transforms-3/47698ea7806c3eea9bf9334c703af174/transformed/lifecycle-livedata-2.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.4.1] /home/nebraszka/.gradle/caches/transforms-3/d2edf685892f535795f2a69d33f107a9/transformed/lifecycle-livedata-core-ktx-2.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.4.1] /home/nebraszka/.gradle/caches/transforms-3/d2edf685892f535795f2a69d33f107a9/transformed/lifecycle-livedata-core-ktx-2.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.4.1] /home/nebraszka/.gradle/caches/transforms-3/1c1de36b4f2580ecbda6a9e0ef006032/transformed/lifecycle-livedata-core-2.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.4.1] /home/nebraszka/.gradle/caches/transforms-3/1c1de36b4f2580ecbda6a9e0ef006032/transformed/lifecycle-livedata-core-2.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /home/nebraszka/.gradle/caches/transforms-3/c40ba6de7e0135eea313e0514d5b71f8/transformed/appcompat-resources-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /home/nebraszka/.gradle/caches/transforms-3/c40ba6de7e0135eea313e0514d5b71f8/transformed/appcompat-resources-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/998657fcb30227e050413717dbf745cb/transformed/emoji2-views-helper-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/998657fcb30227e050413717dbf745cb/transformed/emoji2-views-helper-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/babdb6fcc324e3e1f36c7212d5548a76/transformed/emoji2-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/babdb6fcc324e3e1f36c7212d5548a76/transformed/emoji2-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.media:media:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/9f74a4d181ed5831948d3eb992ddcbe2/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/9f74a4d181ed5831948d3eb992ddcbe2/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/nebraszka/.gradle/caches/transforms-3/b4dc88286437aff3256a4c3f98e1a75f/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/nebraszka/.gradle/caches/transforms-3/b4dc88286437aff3256a4c3f98e1a75f/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/nebraszka/.gradle/caches/transforms-3/3a52317f58a0799de3cc978112bf02b1/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/nebraszka/.gradle/caches/transforms-3/3a52317f58a0799de3cc978112bf02b1/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/nebraszka/.gradle/caches/transforms-3/9493720e179538de1914c65ba8adb33e/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/nebraszka/.gradle/caches/transforms-3/9493720e179538de1914c65ba8adb33e/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/nebraszka/.gradle/caches/transforms-3/9ea39d6fce9f1afccb556f989af6cf25/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/nebraszka/.gradle/caches/transforms-3/9ea39d6fce9f1afccb556f989af6cf25/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/dc39300746797acf644afc0d3746e5ef/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/dc39300746797acf644afc0d3746e5ef/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/nebraszka/.gradle/caches/transforms-3/ae1bb32400f6b5b0623bb1e055965946/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/nebraszka/.gradle/caches/transforms-3/ae1bb32400f6b5b0623bb1e055965946/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /home/nebraszka/.gradle/caches/transforms-3/82f5ada918169638bb7cb6f093aa2496/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /home/nebraszka/.gradle/caches/transforms-3/82f5ada918169638bb7cb6f093aa2496/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/034aa418a53fac5c3b475edb5ff40558/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/034aa418a53fac5c3b475edb5ff40558/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/b499dfb8bf438acc3df6c45f4e03a886/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/b499dfb8bf438acc3df6c45f4e03a886/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.4.1] /home/nebraszka/.gradle/caches/transforms-3/275fce532c89025ea7460b6c82a1e8d9/transformed/transition-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.4.1] /home/nebraszka/.gradle/caches/transforms-3/275fce532c89025ea7460b6c82a1e8d9/transformed/transition-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.7.0] /home/nebraszka/.gradle/caches/transforms-3/d712bc876a373ea5768e2e78ec7db3e9/transformed/core-1.7.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.7.0] /home/nebraszka/.gradle/caches/transforms-3/d712bc876a373ea5768e2e78ec7db3e9/transformed/core-1.7.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/nebraszka/.gradle/caches/transforms-3/d29a7dd3b98966357581fe1ebf597962/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/nebraszka/.gradle/caches/transforms-3/d29a7dd3b98966357581fe1ebf597962/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /home/nebraszka/.gradle/caches/transforms-3/740d4b466898a2449d408c16e4b35b2a/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /home/nebraszka/.gradle/caches/transforms-3/740d4b466898a2449d408c16e4b35b2a/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/c1181172a7115d714fd4cd8833c4afb5/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/c1181172a7115d714fd4cd8833c4afb5/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/597a2ea66c74458ae91fc3fc52ae736c/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/597a2ea66c74458ae91fc3fc52ae736c/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-runtime:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/178825a51c8e88f0293ec38ee110cf64/transformed/room-runtime-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/178825a51c8e88f0293ec38ee110cf64/transformed/room-runtime-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.4.1] /home/nebraszka/.gradle/caches/transforms-3/21944db30df51e6c3b568a9f1ff0ed5a/transformed/lifecycle-viewmodel-2.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.4.1] /home/nebraszka/.gradle/caches/transforms-3/21944db30df51e6c3b568a9f1ff0ed5a/transformed/lifecycle-viewmodel-2.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/nebraszka/.gradle/caches/transforms-3/f605358d098b92c2e842d9d0f0c930d5/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/nebraszka/.gradle/caches/transforms-3/f605358d098b92c2e842d9d0f0c930d5/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/78c2b5d42c3cae4f47d43682416db986/transformed/startup-runtime-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/78c2b5d42c3cae4f47d43682416db986/transformed/startup-runtime-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/nebraszka/.gradle/caches/transforms-3/a9a0cde54e70dfc59dbe59250528c114/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/nebraszka/.gradle/caches/transforms-3/a9a0cde54e70dfc59dbe59250528c114/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/38efaa38d198e1444ba45857a2ff2232/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/38efaa38d198e1444ba45857a2ff2232/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/ab19c9c91be0e0e40f13387b7c77fc6d/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/ab19c9c91be0e0e40f13387b7c77fc6d/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/8be9273d24b79cd555b857746810eac0/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/8be9273d24b79cd555b857746810eac0/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/6eb3686db4d5eef8c73e4a3adcebb7c2/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/6eb3686db4d5eef8c73e4a3adcebb7c2/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/e9f10af39c41319aa90864fdb465e2cd/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/e9f10af39c41319aa90864fdb465e2cd/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.2.0] /home/nebraszka/.gradle/caches/transforms-3/a711d35664659b90809d3b9b722278f5/transformed/sqlite-framework-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.2.0] /home/nebraszka/.gradle/caches/transforms-3/a711d35664659b90809d3b9b722278f5/transformed/sqlite-framework-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.2.0] /home/nebraszka/.gradle/caches/transforms-3/b783661f37e359d6376e5472e69d1dc7/transformed/sqlite-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.2.0] /home/nebraszka/.gradle/caches/transforms-3/b783661f37e359d6376e5472e69d1dc7/transformed/sqlite-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/nebraszka/.gradle/caches/transforms-3/1d4338d7a67f8c8bee441a5d03d4f7c7/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/nebraszka/.gradle/caches/transforms-3/1d4338d7a67f8c8bee441a5d03d4f7c7/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml
+INJECTED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml
+		ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml
+		INJECTED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml
+		ADDED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml
+		INJECTED from /home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/AndroidManifest.xml
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/6f357f16dc6c08a55848a4b68cb11105/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/6f357f16dc6c08a55848a4b68cb11105/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/6f357f16dc6c08a55848a4b68cb11105/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/6f357f16dc6c08a55848a4b68cb11105/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/6f357f16dc6c08a55848a4b68cb11105/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/6f357f16dc6c08a55848a4b68cb11105/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/babdb6fcc324e3e1f36c7212d5548a76/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/nebraszka/.gradle/caches/transforms-3/d29a7dd3b98966357581fe1ebf597962/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/nebraszka/.gradle/caches/transforms-3/d29a7dd3b98966357581fe1ebf597962/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/78c2b5d42c3cae4f47d43682416db986/transformed/startup-runtime-1.0.0/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/78c2b5d42c3cae4f47d43682416db986/transformed/startup-runtime-1.0.0/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/babdb6fcc324e3e1f36c7212d5548a76/transformed/emoji2-1.0.0/AndroidManifest.xml:30:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/babdb6fcc324e3e1f36c7212d5548a76/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/babdb6fcc324e3e1f36c7212d5548a76/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/babdb6fcc324e3e1f36c7212d5548a76/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/babdb6fcc324e3e1f36c7212d5548a76/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/babdb6fcc324e3e1f36c7212d5548a76/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /home/nebraszka/.gradle/caches/transforms-3/babdb6fcc324e3e1f36c7212d5548a76/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/nebraszka/.gradle/caches/transforms-3/d29a7dd3b98966357581fe1ebf597962/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/nebraszka/.gradle/caches/transforms-3/d29a7dd3b98966357581fe1ebf597962/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/nebraszka/.gradle/caches/transforms-3/d29a7dd3b98966357581fe1ebf597962/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/178825a51c8e88f0293ec38ee110cf64/transformed/room-runtime-2.4.2/AndroidManifest.xml:25:9-28:40
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/178825a51c8e88f0293ec38ee110cf64/transformed/room-runtime-2.4.2/AndroidManifest.xml:28:13-37
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/178825a51c8e88f0293ec38ee110cf64/transformed/room-runtime-2.4.2/AndroidManifest.xml:27:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.4.2] /home/nebraszka/.gradle/caches/transforms-3/178825a51c8e88f0293ec38ee110cf64/transformed/room-runtime-2.4.2/AndroidManifest.xml:26:13-74

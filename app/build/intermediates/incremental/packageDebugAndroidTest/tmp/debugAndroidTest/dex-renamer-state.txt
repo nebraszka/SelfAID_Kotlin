@@ -1,0 +1,13 @@
+#Thu Jun 09 15:48:58 CEST 2022
+path.3=5/classes.dex
+path.2=13/classes.dex
+path.1=0/classes.dex
+path.0=classes.dex
+base.3=/home/nebraszka/SelfAIDRepo/Self_AID/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/5/classes.dex
+base.2=/home/nebraszka/SelfAIDRepo/Self_AID/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/13/classes.dex
+base.1=/home/nebraszka/SelfAIDRepo/Self_AID/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/0/classes.dex
+base.0=/home/nebraszka/SelfAIDRepo/Self_AID/app/build/intermediates/dex/debugAndroidTest/mergeExtDexDebugAndroidTest/classes.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex

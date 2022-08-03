@@ -1,0 +1,12 @@
+pl.nebraszka.selfaid.test.app-room-runtime-2.4.2-0 /home/nebraszka/.gradle/caches/transforms-3/0f560e4d44afbe953394032bd816a70a/transformed/room-runtime-2.4.2/res
+pl.nebraszka.selfaid.test.app-annotation-experimental-1.1.0-1 /home/nebraszka/.gradle/caches/transforms-3/140ec7622853f5231f651809ee8adfd0/transformed/annotation-experimental-1.1.0/res
+pl.nebraszka.selfaid.test.app-sqlite-2.2.0-2 /home/nebraszka/.gradle/caches/transforms-3/1b4edc7a280a43ca6f2a840c5155a709/transformed/sqlite-2.2.0/res
+pl.nebraszka.selfaid.test.app-sqlite-framework-2.2.0-3 /home/nebraszka/.gradle/caches/transforms-3/578b06d1d452f31586e3c592645916a4/transformed/sqlite-framework-2.2.0/res
+pl.nebraszka.selfaid.test.app-room-testing-2.4.2-4 /home/nebraszka/.gradle/caches/transforms-3/5b5909f151fee10bc299397191b7eb84/transformed/room-testing-2.4.2/res
+pl.nebraszka.selfaid.test.app-androidTest-5 /home/nebraszka/SelfAIDRepo/Self_AID/app/build/generated/res/resValues/androidTest/debug
+pl.nebraszka.selfaid.test.app-androidTest-6 /home/nebraszka/SelfAIDRepo/Self_AID/app/build/generated/res/rs/androidTest/debug
+pl.nebraszka.selfaid.test.app-mergeDebugAndroidTestResources-7 /home/nebraszka/SelfAIDRepo/Self_AID/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+pl.nebraszka.selfaid.test.app-mergeDebugAndroidTestResources-8 /home/nebraszka/SelfAIDRepo/Self_AID/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+pl.nebraszka.selfaid.test.app-merged_res-9 /home/nebraszka/SelfAIDRepo/Self_AID/app/build/intermediates/merged_res/debugAndroidTest
+pl.nebraszka.selfaid.test.app-androidTest-10 /home/nebraszka/SelfAIDRepo/Self_AID/app/src/androidTest/res
+pl.nebraszka.selfaid.test.app-androidTestDebug-11 /home/nebraszka/SelfAIDRepo/Self_AID/app/src/androidTestDebug/res

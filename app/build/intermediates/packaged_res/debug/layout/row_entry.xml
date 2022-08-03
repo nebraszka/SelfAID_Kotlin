@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btnEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/EJ_List_Entry_Name"
+        android:backgroundTint="@color/said_frst_button_pink"
+        android:fontFamily="@font/ubuntu_bold"
+        android:padding="20dp"
+        android:layout_weight="1"
+        />
+
+    <ImageButton
+        android:id="@+id/btnDeleteEntry"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="5"
+        android:backgroundTint="@color/said_frst_button_pink"
+        android:fontFamily="@font/ubuntu_bold"
+        android:src="@drawable/ic_baseline_delete_outline_24" />
+
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "/home/nebraszka/SelfAIDRepo/Self_AID/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/main_menu.xml",
+        "source": "/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/res/layout/main_menu.xml"
+    },
+    {
+        "merged": "/home/nebraszka/SelfAIDRepo/Self_AID/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_delete.xml",
+        "source": "/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/res/layout/dialog_delete.xml"
+    },
+    {
+        "merged": "/home/nebraszka/SelfAIDRepo/Self_AID/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/row_scale_question.xml",
+        "source": "/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/res/layout/row_scale_question.xml"
+    },
+    {
+        "merged": "/home/nebraszka/SelfAIDRepo/Self_AID/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/emotion_journal.xml",
+        "source": "/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/res/layout/emotion_journal.xml"
+    },
+    {
+        "merged": "/home/nebraszka/SelfAIDRepo/Self_AID/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/emotion_journal_entry.xml",
+        "source": "/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/res/layout/emotion_journal_entry.xml"
+    },
+    {
+        "merged": "/home/nebraszka/SelfAIDRepo/Self_AID/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/emotion_description.xml",
+        "source": "/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/res/layout/emotion_description.xml"
+    },
+    {
+        "merged": "/home/nebraszka/SelfAIDRepo/Self_AID/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/row_ej_entry.xml",
+        "source": "/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/res/layout/row_ej_entry.xml"
+    },
+    {
+        "merged": "/home/nebraszka/SelfAIDRepo/Self_AID/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/row_choose_option.xml",
+        "source": "/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/res/layout/row_choose_option.xml"
+    },
+    {
+        "merged": "/home/nebraszka/SelfAIDRepo/Self_AID/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/ej_entries_list.xml",
+        "source": "/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/res/layout/ej_entries_list.xml"
+    },
+    {
+        "merged": "/home/nebraszka/SelfAIDRepo/Self_AID/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/row_question.xml",
+        "source": "/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/res/layout/row_question.xml"
+    },
+    {
+        "merged": "/home/nebraszka/SelfAIDRepo/Self_AID/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/row_answer.xml",
+        "source": "/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/res/layout/row_answer.xml"
+    },
+    {
+        "merged": "/home/nebraszka/SelfAIDRepo/Self_AID/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_date_picker.xml",
+        "source": "/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/res/layout/dialog_date_picker.xml"
+    },
+    {
+        "merged": "/home/nebraszka/SelfAIDRepo/Self_AID/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/row_todo_task.xml",
+        "source": "/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/res/layout/row_todo_task.xml"
+    },
+    {
+        "merged": "/home/nebraszka/SelfAIDRepo/Self_AID/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/row_entry.xml",
+        "source": "/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/res/layout/row_entry.xml"
+    },
+    {
+        "merged": "/home/nebraszka/SelfAIDRepo/Self_AID/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/emotion_journal_menu.xml",
+        "source": "/home/nebraszka/SelfAIDRepo/Self_AID/app/src/main/res/layout/emotion_journal_menu.xml"
+    }
+]

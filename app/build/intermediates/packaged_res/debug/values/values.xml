@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="said_frst_button_pink">#E0768F</color>
+    <color name="said_peach">#F7AA8D</color>
+    <color name="said_pink_dark">#ed9393</color>
+    <color name="said_pink_light">#f0d1d6</color>
+    <color name="said_thr_button_lightgreen">#D5E076</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="text_margin">16dp</dimen>
+    <integer name="EJ_Entry_Max_Scale_Value">5</integer>
+    <integer name="EJ_Entry_Min_Scale_Value">0</integer>
+    <string name="Blank_Topic">Brak tematu</string>
+    <string name="Checked">Zaznaczono</string>
+    <string name="Date">%1$s / %2$s / %3$d</string>
+    <string name="Date_Dialog_Cancel">Anuluj</string>
+    <string name="Date_Dialog_Choose_Date">Wybierz datę</string>
+    <string name="Date_Dialog_Save">Zatwierdź</string>
+    <string name="Delete_Dialog_Cancel">Nie</string>
+    <string name="Delete_Dialog_Confirm">Tak</string>
+    <string name="Delete_Dialog_Question">Czy na pewno chcesz usunąć wpis?</string>
+    <string name="EJ_Add_New_Entry_Btn">Dodaj wpis</string>
+    <string name="EJ_EmotionDescription_Emotion_Name">Emocja</string>
+    <string name="EJ_Emotion_Descripiton_Back_Btn">Powrót</string>
+    <string name="EJ_Emotion_Descripiton_Describtion">Opis emocji</string>
+    <string name="EJ_Entry_Add_New_Page_Btn">Dodaj kolejną emocję</string>
+    <string name="EJ_Entry_Choose_Date_Btn">Wybierz datę</string>
+    <string name="EJ_Entry_Choose_Emotion">Wybierz emocję</string>
+    <string name="EJ_Entry_Date">Data:</string>
+    <string name="EJ_Entry_Date_Hint">DD/mm/YY</string>
+    <string name="EJ_Entry_Emotion_Describtion_Btn">Opis emocji</string>
+    <string name="EJ_Entry_Save_Btn">Zapisz</string>
+    <string name="EJ_Entry_Title">Tytuł:</string>
+    <string name="EJ_Entry_Title_Hint">Tytuł jest opcjonalny</string>
+    <string name="EJ_List_Entry_Name">Data\nTytuł</string>
+    <string name="EJ_SavedEntry_ChosenEmotion">Wybrana emocja:</string>
+    <string name="Menu_About_Us_Btn">O nas</string>
+    <string name="Menu_Challenges_Btn">Wyzwania</string>
+    <string name="Menu_Emotions_Journal_Btn">Dziennik Emocji</string>
+    <string name="No_Respond">Brak odpowiedzi</string>
+    <string name="None_Checked">Nie zaznaczono żadnej z opcji</string>
+    <string name="Progress_Scale_Question">%1$d/%2$d</string>
+    <string name="Type_Answer">Wpisz odpowiedź</string>
+    <string name="Unchecked">Nie zaznaczono</string>
+    <string name="app_name">SelfAID</string>
+    <string name="database_name">selfaid.db</string>
+    <string name="database_path">database/selfaid.db</string>
+    <style name="Theme.SelfAID" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        
+        <item name="colorPrimary">@color/said_thr_button_lightgreen</item>
+        <item name="colorPrimaryVariant">@color/said_thr_button_lightgreen</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/said_pink_dark</item>
+        <item name="colorSecondaryVariant">@color/said_pink_dark</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        
+    </style>
+</resources>

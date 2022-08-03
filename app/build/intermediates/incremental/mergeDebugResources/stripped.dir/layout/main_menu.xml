@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="6dp"
+    android:layout_marginVertical="10dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgSelfAidText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter"
+
+        app:srcCompat="@drawable/selfaid1" />
+
+    <Button
+        android:id="@+id/btnChallenges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+
+        android:text="@string/Menu_Challenges_Btn"
+        android:textSize="18sp"
+        android:backgroundTint="@color/said_frst_button_pink" />
+
+    <Button
+        android:id="@+id/btnEmotionsJournal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+
+        android:text="@string/Menu_Emotions_Journal_Btn"
+        android:textSize="18sp"
+        android:backgroundTint="@color/said_peach" />
+
+    <Button
+        android:id="@+id/btnAboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        android:text="@string/Menu_About_Us_Btn"
+        android:textSize="18sp"
+        android:backgroundTint="@color/said_thr_button_lightgreen" />
+</LinearLayout>

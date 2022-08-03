@@ -1,0 +1,2 @@
+06-10 00:12:31.589  5678  5700 I TestRunner: started: useAppContext(pl.nebraszka.selfaid.ExampleInstrumentedTest)
+06-10 00:12:31.591  5678  5700 I TestRunner: finished: useAppContext(pl.nebraszka.selfaid.ExampleInstrumentedTest)

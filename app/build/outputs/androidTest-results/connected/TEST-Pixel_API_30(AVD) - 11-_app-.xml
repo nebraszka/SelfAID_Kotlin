@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="pl.nebraszka.selfaid.ExampleInstrumentedTest" tests="1" failures="0" errors="0" skipped="0" time="0.628" timestamp="2022-06-09T22:12:32" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel_API_30(AVD) - 11" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="useAppContext" classname="pl.nebraszka.selfaid.ExampleInstrumentedTest" time="0.011" />
+</testsuite>
