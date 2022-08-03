@@ -16,6 +16,7 @@ import pl.nebraszka.selfaid.R
 import pl.nebraszka.selfaid.SelfAIDDatabase
 import pl.nebraszka.selfaid.emotions_journal.activities.EJSavedEntry
 import pl.nebraszka.selfaid.entities.EJEntry
+import pl.nebraszka.selfaid.tools.DeleteEntryPickerHandler
 import pl.nebraszka.selfaid.tools.date.DateEditor
 import pl.nebraszka.selfaid.view_models.EJMenuViewModel
 
@@ -67,7 +68,7 @@ class EntryViewHolder(itemView: View, private val context: Context) :
 
     fun setUpDeleteClickListener(viewModel: EJMenuViewModel){
         itemView.btnDeleteEntry.setOnClickListener {
-            viewModel.deleteByEntryId(itemView.id)
+            DeleteEntryPickerHandler.deleteEntry(context, viewModel, itemView.id)
         }
     }
 }

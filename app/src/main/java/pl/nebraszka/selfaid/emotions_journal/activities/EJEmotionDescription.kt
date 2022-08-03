@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.emotion_description.*
 import pl.nebraszka.selfaid.R
+import pl.nebraszka.selfaid.tools.ViewVisibilityManager
 
 // TODO: może zrobić z tego fragment?
 class EJEmotionDescription : AppCompatActivity() {

@@ -47,6 +47,11 @@
     <string name="Date_Dialog_Choose_Date">Wybierz datę</string>
     <string name="EJ_List_Entry_Name">Data\nTytuł</string>
 
+    <!-- Delete dialog -->
+    <string name="Delete_Dialog_Question">Czy na pewno chcesz usunąć wpis?</string>
+    <string name="Delete_Dialog_Confirm">Tak</string>
+    <string name="Delete_Dialog_Cancel">Nie</string>
+
 
     <string name="EJ_SavedEntry_ChosenEmotion">Wybrana emocja:</string>
 

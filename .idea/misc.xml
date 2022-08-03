@@ -55,6 +55,7 @@
         <entry key="app/src/main/res/layout/content_emotions_journal.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/date_picker_dialog.xml" value="0.25" />
         <entry key="app/src/main/res/layout/dialog_date_picker.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/dialog_delete.xml" value="0.1" />
         <entry key="app/src/main/res/layout/ej_entries_list.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/emjour_menu.xml" value="0.33" />
         <entry key="app/src/main/res/layout/emjour_page.xml" value="0.35625" />
@@ -80,14 +81,14 @@
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/main_activity.xml" value="0.1388888888888889" />
-        <entry key="app/src/main/res/layout/main_menu.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/main_menu.xml" value="0.33" />
         <entry key="app/src/main/res/layout/main_menu_fragment.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/main_screen.xml" value="0.33" />
         <entry key="app/src/main/res/layout/row_answer.xml" value="0.28020833333333334" />
         <entry key="app/src/main/res/layout/row_choose_option.xml" value="0.3507692307692308" />
         <entry key="app/src/main/res/layout/row_ej_entry.xml" value="0.28125" />
         <entry key="app/src/main/res/layout/row_entry.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/row_question.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/row_question.xml" value="0.5" />
         <entry key="app/src/main/res/layout/row_scale_question.xml" value="0.18177083333333333" />
         <entry key="app/src/main/res/layout/row_todo_task.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/scale_question_ro.xml" value="1.6464285714285714" />

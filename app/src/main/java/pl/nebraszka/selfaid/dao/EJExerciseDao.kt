@@ -7,6 +7,6 @@ import pl.nebraszka.selfaid.entities.EJExercise
 
 @Dao
 interface EJExerciseDao {
-    @Query("SELECT * FROM TB_EJ_Exercises ORDER BY exercise_type ")
+    @Query("SELECT * FROM TB_EJ_Exercises")
     fun getAllExercises(): Flow<List<EJExercise>>
 }

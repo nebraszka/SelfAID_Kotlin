@@ -13,9 +13,9 @@
         android:id="@+id/imgSelfAidText"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:scaleType="fitCenter"
         android:layout_weight="7"
         android:contentDescription="@null"
+        android:scaleType="fitCenter"
 
         app:srcCompat="@drawable/selfaid1" />
 
